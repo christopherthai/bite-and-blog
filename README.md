@@ -6,7 +6,7 @@ Bite and Blog is an interactive public food blogging app where users can create 
 
 ## Wireframe
 
-![Wireframe](./screenshots/Wireframe.png)
+![Wireframe](./planning/Wireframe.png)
 
 ## User Stories
 
@@ -23,19 +23,19 @@ Bite and Blog is an interactive public food blogging app where users can create 
 API EndPoints (Using to create db.json file):
 <https://www.themealdb.com/api/json/v1/1/search.php?s=>
 
-![API EndPoints](./screenshots/API-EndPoints.png)
+![API EndPoints](./planning/API-EndPoints.png)
 
 ## React Routes
 
-![ReactRoutes](./screenshots/ReactRoutes.png)
+![ReactRoutes](./planning/ReactRoutes.png)
 
 ## Component Tree
 
-![ComponentTree](./screenshots/ComponentTree.png)
+![ComponentTree](./planning/ComponentTree.png)
 
 ## Database
 
-![Database](./screenshots/Database.png)
+![Database](./planning/Database.png)
 
 ## Stretch Goals
 
@@ -49,4 +49,4 @@ API EndPoints (Using to create db.json file):
 
 ## Trello Board
 
-![Trello Board](./screenshots/TrelloBoard.png)
+![Trello Board](./planning/TrelloBoard.png)
