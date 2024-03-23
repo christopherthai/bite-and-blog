@@ -1,15 +1,13 @@
 import NavBar from "./components/NavBar";
 import { Outlet } from "react-router-dom";
 import Header from './components/Header.jsx';
-import AddBite from "./pages/AddBite.jsx";
+import './index.css'
 
 function App() {
   return (
     <div>
-      {/*<Header />*/}
-      {/*<NavBar />*/}
-     {/* <Outlet />*/}
-     <AddBite/>
+      <Header />
+      <Outlet />
     </div>
   );
 }
