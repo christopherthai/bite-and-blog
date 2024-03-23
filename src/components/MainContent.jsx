@@ -25,7 +25,7 @@ function MainContent() {
         }}>
     <Card.Img 
         variant="top" 
-        src="src/components/spaghetti.jpg" 
+        src="src/images/spaghetti.jpg" 
         style={{
           objectFit: 'cover',
           width: 'auto',
