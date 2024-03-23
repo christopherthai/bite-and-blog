@@ -63,7 +63,7 @@ function RecentBitesList() {
             backgroundImage: 'url("src/components/fac.webp")', 
             backgroundSize: 'cover',
             filter: hoveredCard === 2 ? 'blur(30px)' : 'none',
-          transition: 'filter 0.5s ease'
+            transition: 'filter 0.5s ease'
         }}
         onMouseEnter={() => handleMouseEnter(2)}
         onMouseLeave={handleMouseLeave}
