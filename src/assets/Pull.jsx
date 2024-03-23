@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 function Pull() {
   const [data, setData] = useState(null)
-  const url = `www.themealdb.com/api/json/v1/1/random.php`
+  const url = `https://www.themealdb.com/api/json/v1/1/random.php`
 
   useEffect(()=> {
     fetch(url)
@@ -12,25 +12,51 @@ function Pull() {
         }
         return res.json();       
       })
-      .then (data => setData(data))
+      .then (data => {
+        if (data.meals && data.meals.length > 0)
+        setData(data.meals[0]);
+      })
       .catch(error => console.log("Error fetching data:", error));   
   }, []);
 
-const relevantKeys = [idMeal, strMeal, strCategory, strArea, strInstructions, strMealThumb, strTags, strYoutube]
+const relevantKeys = ['idMeal', 'strMeal', 'strCategory', 'strArea', 'strInstructions', 'strMealThumb', 'strTags', 'strYoutube']
 
-const filteredRelevantData = (original, keys){
+const filteredRelevantData = (original, keys)=>{
+    //if (!original) return {};
     const filteredData = {};
     keys.forEach(key =>{
         if (original.hasOwnProperty(key)){
-            filteredData[Key]= original[key];
+            filteredData[key]= original[key];
         }
     });
     return filteredData;
 }
-const relevantData = filteredRelevantData(data, relevantKeys);
 
-console.log(relevantData)
+useEffect(()=>{
+    if (data){
+        const relevantData = filteredRelevantData(data, relevantKeys);
+        console.log(`fetched data`, data);
+        console.log(`Filtered relevant data:`, relevantData);
+
+        
+    fetch(`http://localhost:4000/meals/`, {
+      method:'POST',
+      headers: {
+        'Content-Type':'Application/JSON',
+      },
+      body: JSON.stringify(relevantData),
+    })
+      .then(res=>res.json())
+      
+      .catch(error=> console.log('Error adding plant:', error));
+
+    }
+}, [data])
+
+
+  
+return null;
 
 };
 
-export default App
+export default Pull

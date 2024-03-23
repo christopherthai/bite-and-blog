@@ -1,18 +1,31 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  font-family: Inter, system-ui, font1, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  --clr-text: rgb(9, 5, 4);
+  --clr-background: rgb(251, 246, 245);
+  --clr-primary: rgb(177, 103, 84);
+  --clr-secondary: rgb(154, 209, 203);
+  --clr-accent: rgb(117, 134, 192);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face {
+  font-family: FiftiesMovies;
+  src: url(./FiftiesMovies.ttf)
+}
+@font-face {
+  font-family: muffaroo;
+  src: url(./Muffaroo.ttf)
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,16 +38,24 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  
   min-width: 320px;
   min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-wrap: balance;
 }
 
+header {
+  font-family: FiftiesMovies;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -66,3 +87,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.wrapper {
+  width: min(calc(100% - 3rem), 95ch);
+  margin-inline: auto;
+}
+  
+
+.about-text {
+  color: rgb(255, 255, 255); 
+  font-size: 18px; 
+  line-height: 1.7;}
