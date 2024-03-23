@@ -21,7 +21,7 @@ function AddBiteForm() {
     const handleSubmit = (e) =>{
         e.preventDefault();
         console.log(addMeal);
-        fetch(url, {
+        fetch('http://localhost:4000/meals/', {
             method:'POST',
             headers: {
               'Content-Type':'Application/JSON',
