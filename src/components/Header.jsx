@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>Header</h1>
+      <h1 className="bnb" >Bite and Blog</h1>
     </header>
   );
 }

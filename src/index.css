@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  font-family: Inter, system-ui, font1, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,7 +13,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face {
+  font-family: FiftiesMovies;
+  src: url(../fonts/FiftiesMovies.ttf)
+}
+@font-face {
+  font-family: muffaroo;
+  src: url(../fonts/Muffaroo.ttf)
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,7 +33,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +73,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+ 
+}
+h1{
+  font-family: muffaroo;
+  src: local('muffaroo'), url(..fonts/Muffaroo.ttf) format('ttf')
 }
