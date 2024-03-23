@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: FiftiesMovies;
-  src: url(../fonts/FiftiesMovies.ttf)
+  src: url(./FiftiesMovies.ttf)
 }
 @font-face {
   font-family: muffaroo;
@@ -43,6 +43,9 @@ h1 {
   line-height: 1.1;
 }
 
+header {
+  font-family: FiftiesMovies;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -75,8 +78,4 @@ button:focus-visible {
   }
 
  
-}
-h1{
-  font-family: muffaroo;
-  src: local('muffaroo'), url(..fonts/Muffaroo.ttf) format('ttf')
 }
