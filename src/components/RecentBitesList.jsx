@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-
 function RecentBitesList() {
 
     const [hoveredCard, setHoveredCard] = useState(null);
@@ -26,7 +24,7 @@ function RecentBitesList() {
             position: 'absolute', 
             top : '20%', 
             right: '50px',
-            backgroundImage: 'url("src/components/hotdog.jpeg")', 
+            backgroundImage: 'url("src/images/hotdog.jpeg")', 
             backgroundSize: 'cover',
             filter: hoveredCard === 1 ? 'blur(30px)' : 'none',
           transition: 'filter 0.5s ease'
@@ -60,7 +58,7 @@ function RecentBitesList() {
             position: 'absolute', 
             top: '40%', 
             right: '50px', 
-            backgroundImage: 'url("src/components/fac.webp")', 
+            backgroundImage: 'url("src/images/fac.webp")', 
             backgroundSize: 'cover',
             filter: hoveredCard === 2 ? 'blur(30px)' : 'none',
           transition: 'filter 0.5s ease'
@@ -87,7 +85,7 @@ function RecentBitesList() {
             height: '15rem', 
             position: 'absolute', 
             top: '60%', right: '50px', 
-            backgroundImage: 'url("src/components/pizza.jpg")', 
+            backgroundImage: 'url("src/images/pizza.jpg")', 
             backgroundSize: 'cover',
             filter: hoveredCard === 3 ? 'blur(30px)' : 'none',
           transition: 'filter 0.5s ease'
