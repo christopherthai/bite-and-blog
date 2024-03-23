@@ -14,13 +14,8 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "react": "^18.2.0",
-<<<<<<< HEAD
-    "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0"
-=======
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
->>>>>>> 18d00b62bbed2ed96564230adb5db66c8f17c716
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
