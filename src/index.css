@@ -7,6 +7,11 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  --clr-text: rgb(9, 5, 4);
+  --clr-background: rgb(251, 246, 245);
+  --clr-primary: rgb(177, 103, 84);
+  --clr-secondary: rgb(154, 209, 203);
+  --clr-accent: rgb(117, 134, 192);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +24,7 @@
 }
 @font-face {
   font-family: muffaroo;
-  src: url(../fonts/Muffaroo.ttf)
+  src: url(./Muffaroo.ttf)
 }
 a {
   font-weight: 500;
@@ -37,10 +42,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 header {
@@ -76,6 +86,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
- 
 }
+.wrapper {
+  width: min(calc(100% - 3rem), 95ch);
+  margin-inline: auto;
+}
+  
+
+.about-text {
+  color: rgb(255, 255, 255); 
+  font-size: 18px; 
+  line-height: 1.7;}
