@@ -1,4 +1,5 @@
 import NavBar from "./NavBar"
+
 function Header() {
   return (
     <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
