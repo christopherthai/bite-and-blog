@@ -20,13 +20,16 @@ function AddBiteForm() {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
+        const now = new Date();
+        const dateStamp = now.toISOString().split('T')[0];
+        const mealDataWithDate = {...addMeal, dateStamp};
         console.log(addMeal);
         fetch('http://localhost:4000/meals/', {
             method:'POST',
             headers: {
               'Content-Type':'Application/JSON',
             },
-            body: JSON.stringify(addMeal),
+            body: JSON.stringify(mealDataWithDate),
         })
             .then(res=>res.json())
             .then(data => console.log(`Posted meal`, data))
