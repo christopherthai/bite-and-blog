@@ -29,7 +29,7 @@ function MainContent() {
         style={{
           objectFit: 'cover',
           width: 'auto',
-          height: '800px',
+          height: '600px',
           filter: isHovered ? 'hover' : 'none',
           transition: 'filter 0.5s ease'
         }}
