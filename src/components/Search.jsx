@@ -1,18 +1,24 @@
-import React from 'react'
+import React from "react";
+import PropTypes from 'prop-types';
 
-function Search() {
-  
-  
+function Search({ search, onHandleSearch }) {
   return (
     <div className="searchbar">
-      {/* <label htmlFor="search">Search Bites Posts:</label> */}
       <input
         type="text"
         id="search"
         placeholder="Type a name to search..."
+        value={search}
+        onChange={(e) => onHandleSearch(e)}
       />
     </div>
   );
 }
 
-export default Search
+// Add PropTypes for the search and onHandleSearch props in the Search component
+Search.propTypes = {
+  search: PropTypes.string.isRequired,
+  onHandleSearch: PropTypes.func.isRequired,
+};
+
+export default Search;

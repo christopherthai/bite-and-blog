@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
-import "../index.css"
+import "../index.css";
+import Search from "../components/Search";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
+  const [search, setSearch] = useState(""); // Set the search state
 
   useEffect(() => {
     fetch("http://localhost:4000/meals")
       .then((response) => response.json())
       .then((data) => {
         if (Array.isArray(data)) {
-          const sortedMeals = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+          const sortedMeals = data.sort(
+            (a, b) => new Date(b.date) - new Date(a.date)
+          );
           setBites(
             sortedMeals.map((meal) => ({
               ...meal,
@@ -27,16 +31,29 @@ function AllBites() {
   const toggleDescription = (index) => {
     setBites((prevBites) =>
       prevBites.map((bite, i) =>
-        i === index ? { ...bite, showFullDescription: !bite.showFullDescription } : bite
+        i === index
+          ? { ...bite, showFullDescription: !bite.showFullDescription }
+          : bite
       )
     );
   };
 
+  // Update the search term in the search state
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
+  // Filter the bites based on the search term
+  const filteredBites = bites.filter((bite) =>
+    bite.strMeal.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <main className="bites-container">
       <h1>All Bites</h1>
+      <Search search={search} onHandleSearch={handleSearch} />
       <div className="meal-grid">
-        {bites.map((bite, index) => (
+        {filteredBites.map((bite, index) => (
           <div key={bite.idMeal} className="meal">
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
@@ -48,10 +65,14 @@ function AllBites() {
                   : `${bite.strInstructions.slice(0, 100)}...`}
               </p>
               {!bite.showFullDescription && (
-                <button onClick={() => toggleDescription(index)}>Read more</button>
+                <button onClick={() => toggleDescription(index)}>
+                  Read more
+                </button>
               )}
               {bite.showFullDescription && (
-                <button onClick={() => toggleDescription(index)}>Read less</button>
+                <button onClick={() => toggleDescription(index)}>
+                  Read less
+                </button>
               )}
               <p>Date: {bite.date}</p>
             </div>
