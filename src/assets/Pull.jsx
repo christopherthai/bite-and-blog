@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react'
 function Pull() {
   const [data, setData] = useState(null)
   const url = `https://www.themealdb.com/api/json/v1/1/random.php`
-
-  useEffect(()=> {
+ 
+useEffect(()=> {
     fetch(url)
       .then (res => {
         if (!res.ok) {
@@ -57,6 +57,6 @@ useEffect(()=>{
   
 return null;
 
-};
+}; 
 
 export default Pull
