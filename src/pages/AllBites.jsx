@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Search from "../components/Search";
 import { Link } from 'react-router-dom';
+import Favorite from "../components/Favorite";
 import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
 
@@ -20,6 +21,7 @@ function AllBites() {
             sortedMeals.map((meal) => ({
               ...meal,
               showFullDescription: false,
+              isFavorited: false,
             }))
           );
         } else {
@@ -36,6 +38,15 @@ function AllBites() {
         i === index
           ? { ...bite, showFullDescription: !bite.showFullDescription }
           : bite
+      )
+    );
+  };
+
+  // Function to toggle favorite status
+  const toggleFavorite = (index) => {
+    setBites((prevBites) =>
+      prevBites.map((bite, i) =>
+        i === index ? { ...bite, isFavorited: !bite.isFavorited } : bite
       )
     );
   };
@@ -96,6 +107,11 @@ function AllBites() {
                   Read less
                 </button>
               )}
+              
+              <Favorite
+                isFavorited={bite.isFavorited}
+                toggleFavorite={() => toggleFavorite(index)}
+              />
               
               <button
                 className="delete"
