@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function AddBiteForm() {
     const [addMeal, setAddMeal] = useState({
@@ -20,13 +20,16 @@ function AddBiteForm() {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
+        const now = new Date();
+        const dateStamp = now.toISOString().split('T')[0];
+        const mealDataWithDate = {...addMeal, dateStamp};
         console.log(addMeal);
         fetch('http://localhost:4000/meals/', {
             method:'POST',
             headers: {
               'Content-Type':'Application/JSON',
             },
-            body: JSON.stringify(addMeal),
+            body: JSON.stringify(mealDataWithDate),
         })
             .then(res=>res.json())
             .then(data => console.log(`Posted meal`, data))
@@ -50,7 +53,7 @@ function AddBiteForm() {
                 name="strCategory"
                 value={addMeal.strCategory}
                 onChange={handleChange}
-                placeholder="Category"
+                placeholder="Category e.g. Pasta, Seafood, Dessert"
                 style={{ marginBottom: '10px', width: '100%' }}
             />
             <input
@@ -58,14 +61,14 @@ function AddBiteForm() {
                 name="strArea"
                 value={addMeal.strArea}
                 onChange={handleChange}
-                placeholder="Area"
+                placeholder="Area of Origin"
                 style={{ marginBottom: '10px', width: '100%' }}
             />
             <textarea
                 name="strInstructions"
                 value={addMeal.strInstructions}
                 onChange={handleChange}
-                placeholder="Instructions"
+                placeholder="Instructions/Recipe"
                 style={{ marginBottom: '10px', width: '100%' }}
             />
             <input
@@ -73,7 +76,7 @@ function AddBiteForm() {
                 name="strMealThumb"
                 value={addMeal.strMealThumb}
                 onChange={handleChange}
-                placeholder="Meal Thumbnail URL"
+                placeholder="Meal Picture URL"
                 style={{ marginBottom: '10px', width: '100%' }}
             />
             <input
