@@ -1,111 +1,82 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
+
 
 function RecentBitesList() {
 
-    const [hoveredCard, setHoveredCard] = useState(null);
 
-    const handleMouseEnter = (cardNumber) => {
-        setHoveredCard(cardNumber);
-      };
-    
-      const handleMouseLeave = () => {
-        setHoveredCard(null);
-      };
+  const [recent, setRecent] = useState([]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/meals');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const jsonData = await response.json();
+        const sortedRecent = jsonData.sort((a, b) => b.date.localeCompare(a.date));
+        const recentTenRecent = sortedRecent.slice(0, 3);
+        setRecent(recentTenRecent);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
+
+
+
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredCard(index);
+  };
+  
+  const handleMouseLeave = () => {
+    setHoveredCard(null);
+  };
+
+
+  
   return (
     <div>
-        <h2 style={{position: 'absolute', top : '15%', right: '15%', fontSize : "30pt" }}>
-            Recent Bites
-        </h2>
-        <Card 
-            style={{ 
-            width: '35rem', 
-            height: '15rem', 
-            position: 'absolute', 
-            top : '20%', 
-            right: '50px',
-            backgroundImage: 'url("src/images/hotdog.jpeg")', 
-            backgroundSize: 'cover',
-            filter: hoveredCard === 1 ? 'blur(30px)' : 'none',
-          transition: 'filter 0.5s ease'
-        }}
-        onMouseEnter={() => handleMouseEnter(1)}
-        onMouseLeave={handleMouseLeave}
-      >
-            
-            <Card.Body>
-            <Card.Title style={{ color: 'white' }}>Recent 1</Card.Title>
-            <Card.Text>
-            
-            </Card.Text>
-            </Card.Body>
-            
-            <Card.Body>
-                <Card.Link href="#">Card Link</Card.Link>
-            </Card.Body>
-            
-            {hoveredCard === 1 && (
-            <Card.Title>
-            <Card.Text style={{ color: 'white' }}>Comment from users</Card.Text>
-            </Card.Title>
-            )}
-        </Card>
-
-        <Card 
-        style={{ 
+      <h2 style={{ position: 'absolute', top: '15%', right: '15%', fontSize: '30pt' }}>
+        Recent Bites
+      </h2>
+      {recent.map((item, index) => (
+        <Card
+          key={index}
+          style={{
             width: '35rem',
-            height: '15rem',  
-            position: 'absolute', 
-            top: '40%', 
-            right: '50px', 
-            backgroundImage: 'url("src/images/fac.webp")', 
+            height: '15rem',
+            position: 'absolute',
+            top: `${20 + 20 * index}%`,
+            right: '50px',
+            backgroundImage: `url(${item.strMealThumb})`,
             backgroundSize: 'cover',
-            filter: hoveredCard === 2 ? 'blur(30px)' : 'none',
-            transition: 'filter 0.5s ease'
-        }}
-        onMouseEnter={() => handleMouseEnter(2)}
-        onMouseLeave={handleMouseLeave}
-            >
-            
-            <Card.Body>
-            <Card.Title style={{ color: 'white' }}>Recent 2</Card.Title>
-            <Card.Text>
-            
-            </Card.Text>
-            </Card.Body>
-            
-            <Card.Body>
-                <Card.Link href="#">Card Link</Card.Link>
-            </Card.Body>
-        </Card>
-
-        <Card 
-            style={{ 
-            width: '35rem', 
-            height: '15rem', 
-            position: 'absolute', 
-            top: '60%', right: '50px', 
-            backgroundImage: 'url("src/images/pizza.jpg")', 
-            backgroundSize: 'cover',
-            filter: hoveredCard === 3 ? 'blur(30px)' : 'none',
-          transition: 'filter 0.5s ease'
-        }}
-        onMouseEnter={() => handleMouseEnter(3)}
-        onMouseLeave={handleMouseLeave}
+            filter: hoveredCard === index ? 'brightness(110%)' : 'none',
+            transition: 'filter 0.5s ease',
+          }}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
         >
+          <Card.Body>
+            <Card.Title>{item.strMeal}</Card.Title>
+            <Card.Text></Card.Text>
+          </Card.Body>
+          <Card.Body>
             
-            <Card.Body>
-            <Card.Title style={{ color: 'white' }}>Recent 3</Card.Title>
-            <Card.Text>
-            
-            </Card.Text>
-            </Card.Body>
-            
-            <Card.Body>
-                <Card.Link href="#">Card Link</Card.Link>
-            </Card.Body>
+          </Card.Body>
+
+          {hoveredCard === index && (
+            <Card.Title>
+              <Card.Text></Card.Text>
+              <Card.Link href="#">Link</Card.Link>
+            </Card.Title>
+          )}
         </Card>
+      ))}
     </div>
   );
 }

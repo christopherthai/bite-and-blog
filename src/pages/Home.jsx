@@ -11,13 +11,14 @@ function Home() {
  return (
    <>
     
-     {/* <MainContent/> */}
+     <MainContent/>
      <RecentBitesList/>
-     <Bite/>
+     {/* <Bite/> */}
     
    </>
  );
 }
+
 
 
 export default Home;
