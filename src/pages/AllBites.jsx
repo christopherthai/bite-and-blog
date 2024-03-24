@@ -61,7 +61,7 @@ function AllBites() {
         }
       })
       .then(() => {
-        setBites((prevBites) => prevBites.filter((bite) => bite.idMeal !== id));
+        setBites((prevBites) => prevBites.filter((bite) => bite.id !== id));
       })
       .catch((error) => console.error("Error deleting bite:", error));
   };
@@ -94,7 +94,7 @@ function AllBites() {
               )}
               <button
                 className="delete"
-                onClick={() => deleteBite(bite.idMeal)}
+                onClick={() => deleteBite(bite.id)}
               >
                 Delete
               </button>
