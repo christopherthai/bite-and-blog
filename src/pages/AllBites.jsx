@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
 import Search from "../components/Search";
+import { Link } from 'react-router-dom';
+import ShowcaseBite from "./ShowcaseBite";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
@@ -37,7 +39,7 @@ function AllBites() {
       )
     );
   };
-
+  
   // Update the search term in the search state
   const handleSearch = (e) => {
     setSearch(e.target.value);
@@ -78,10 +80,12 @@ function AllBites() {
               <h2>{bite.strMeal}</h2>
               <p>Category: {bite.strCategory}</p>
               <p>
+                
                 {bite.showFullDescription
                   ? bite.strInstructions
                   : `${bite.strInstructions.slice(0, 100)}...`}
-              </p>
+              </p>                 
+              
               {!bite.showFullDescription && (
                 <button onClick={() => toggleDescription(index)}>
                   Read more
@@ -92,6 +96,7 @@ function AllBites() {
                   Read less
                 </button>
               )}
+              
               <button
                 className="delete"
                 onClick={() => deleteBite(bite.id)}
@@ -99,6 +104,7 @@ function AllBites() {
                 Delete
               </button>
               <p>Date: {bite.date}</p>
+              <Link to = {`/ShowcaseBite/${bite.id}`} element >See Full Bite Page</Link>
             </div>
           </div>
         ))}
