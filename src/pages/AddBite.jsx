@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AddBiteForm from "../components/AddBiteForm";
+import "../index.css";
 
 function AddBite() {
   const [meals, setMeals] = useState([]);

@@ -55,6 +55,7 @@ h1 {
 
 header {
   font-family: FiftiesMovies;
+  
 }
 button {
   border-radius: 8px;
@@ -94,6 +95,60 @@ button:focus-visible {
   
 
 .about-text {
-  color: rgb(255, 255, 255); 
+  color: rgb(0, 0, 0); 
   font-size: 18px; 
   line-height: 1.7;}
+
+  .bites-container {
+    padding: 20px;
+  }
+  
+  .meal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .meal {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .meal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .meal-details {
+    padding: 10px;
+  }
+  
+  .meal-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .meal-details p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .meal-details button {
+    background-color:rgb(57, 209, 178);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .meal-details button:hover {
+    background-color: #0056b3;
+  }
+  
+  .meal-details button:active {
+    background-color: #0056b3;
+  }
