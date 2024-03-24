@@ -48,6 +48,24 @@ function AllBites() {
     bite.strMeal.toLowerCase().includes(search.toLowerCase())
   );
 
+  // Function to delete a bite in the database and update the state
+  const deleteBite = (id) => {
+    fetch(`http://localhost:4000/meals/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json(); // Will be called if the server returns a success
+        } else {
+          console.error("Error deleting bite post"); // Will be called if the server returns an error
+        }
+      })
+      .then(() => {
+        setBites((prevBites) => prevBites.filter((bite) => bite.idMeal !== id));
+      })
+      .catch((error) => console.error("Error deleting bite:", error));
+  };
+
   return (
     <main className="bites-container">
       <h1>All Bites</h1>
@@ -74,6 +92,12 @@ function AllBites() {
                   Read less
                 </button>
               )}
+              <button
+                className="delete"
+                onClick={() => deleteBite(bite.idMeal)}
+              >
+                Delete
+              </button>
               <p>Date: {bite.date}</p>
             </div>
           </div>
