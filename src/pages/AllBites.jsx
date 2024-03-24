@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../index.css";
 import Search from "../components/Search";
 import { Link } from 'react-router-dom';
 import ShowcaseBite from "./ShowcaseBite";
+import "../index.css";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
