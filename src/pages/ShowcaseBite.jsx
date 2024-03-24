@@ -32,7 +32,7 @@ function ShowcaseBite() {
             <h2>{bite.strMeal}</h2>
             <p>Category: {bite.strCategory}</p>
             <p>{bite.strInstructions}</p>
-            <p>Date: {bite.data}</p>
+            <p>Date: {bite.date}</p>
         </div>
     )
 }
