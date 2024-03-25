@@ -10,6 +10,7 @@
       "strTags": "Pasta,Curry",
       "strYoutube": "https://www.youtube.com/watch?v=1IszT_guI08",
       "id": "320a",
+      "mealPreparationTime": "30 minutes",
       "date": "2023-07-31",
       "isFavorited": false
     },
@@ -23,6 +24,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/r33cud1576791081.jpg",
       "strTags": "Christmas",
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
+      "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
       "isFavorited": false
     },
@@ -36,6 +38,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
       "strTags": "Chocolate,Desert,Snack",
       "strYoutube": "https://www.youtube.com/watch?v=Pi89PqsAaAg",
+      "mealPreparationTime": "50 minutes",
       "date": "2023-12-15",
       "isFavorited": false
     },
@@ -49,6 +52,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
       "strTags": null,
       "strYoutube": "",
+      "mealPreparationTime": "1 hour",
       "date": "2023-10-21",
       "isFavorited": false
     },
@@ -62,6 +66,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=6R8ffRRJcrg",
+      "mealPreparationTime": "35 minutes",
       "date": "2023-08-06",
       "isFavorited": false
     },
@@ -75,6 +80,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=fEN_fm6kX6k",
+      "mealPreparationTime": "50 minutes",
       "date": "2023-11-30",
       "isFavorited": false
     },
@@ -88,6 +94,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
+      "mealPreparationTime": "3 hours",
       "date": "2024-02-29",
       "isFavorited": true
     },
@@ -101,6 +108,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
       "strTags": "Pasta,Cheasy,Meat",
       "strYoutube": "https://www.youtube.com/watch?v=bwTSmLTZKNg",
+      "mealPreparationTime": "45 minutes",
       "date": "2024-01-01",
       "isFavorited": false
     },
@@ -114,6 +122,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg",
       "strTags": "Vegetarian",
       "strYoutube": "https://www.youtube.com/watch?v=BiQUYTBb6eQ",
+      "mealPreparationTime": "2 hours",
       "date": "2023-05-20",
       "isFavorited": false
     },
@@ -127,6 +136,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/vxuyrx1511302687.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=B0YX0yPX4Wo",
+      "mealPreparationTime": "50 minutes",
       "date": "2022-09-13",
       "isFavorited": false
     },
@@ -140,6 +150,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/n1hcou1628770088.jpg",
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=ipEz5u2T7KM",
+      "mealPreparationTime": "2 hours",
       "date": "2022-04-14",
       "isFavorited": false
     },
@@ -153,19 +164,21 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg",
       "strTags": "Curry,Vegetarian,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=J4D855Q9-jg",
+      "mealPreparationTime": "1 hour",
       "date": "2023-02-21",
       "isFavorited": false
     },
     {
       "id": "c90e",
       "idMeal": "52993",
-      "strMeal": "Honey Balsamic Chicken with Crispy Broccoli & Potatoes",
+      "strMeal": "Honey Balsamic Chicken & Crispy Veggies",
       "strCategory": "Chicken",
       "strArea": "American",
       "strInstructions": "2 Servings\r\n\r\n1. Preheat oven to 425 degrees. Wash and dry all produce. Cut potatoes into 1/2-inch-thick wedges. Toss on one side of a baking sheet with a drizzle of oil, salt, and pepper. (For 4 servings, spread potatoes out across entire sheet.) Roast on top rack for 5 minutes (we'll add the broccoli then). \r\n\r\n2. Meanwhile, cut broccoli florets into bite-size pieces, if necessary. Peel and finely chop garlic. In a small microwave-safe bowl, combine 1 TBSP olive oil (2 TBSP for 4 servings) and half the garlic. Microwave until garlic sizzles, 30 seconds. \r\n\r\n3. Once potatoes have roasted 5 minutes, remove sheet from oven and add broccoli to empty side; carefully toss with garlic oil, salt, and pepper. (For 4 servings, add broccoli to a second sheet.) Continue roasting until potatoes and broccoli are browned and crispy, 15-20 minutes more. \r\n\r\n4. While veggies roast, pat chicken dry with paper towels; season all over with salt and pepper. Heat a drizzle of oil in a large pan over medium-high heat. Add chicken and cook until browned and cooked through, 5-6 minutes per side. (If chicken browns too quickly, reduce heat to medium.) Turn off heat; set chicken aside to rest. Wash out pan. \r\n\r\n5. Heat pan used for chicken over medium-high heat. Add a drizzle of oil and remaining garlic; cook until fragrant, 30 seconds. Stir in vinegar, honey, stock concentrate, and 1/4 cup water (1/3 cup for 4 servings). Simmer until thick and glossy, 2-3 minutes. Remove from heat and stir in 1 TBSP butter (2 TBSP for 4). Season with salt and pepper. \r\n\r\n6. Return chicken to pan and turn to coat in glaze. Divide chicken, broccoli, and potatoes between plates. Spoon any remaining glaze over chicken and serve. ",
       "strMealThumb": "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
       "strTags": null,
       "strYoutube": "",
+      "mealPreparationTime": "45 minutes",
       "date": "2022-02-22",
       "isFavorited": false
     },
@@ -179,6 +192,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
       "strTags": "Desert,Dairy,Pudding,Cake,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=tspdJ6hxqnc",
+      "mealPreparationTime": "5 hours",
       "date": "2022-05-03",
       "isFavorited": false
     },
@@ -192,6 +206,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=JYtMjKa6cdY",
+      "mealPreparationTime": "30 minutes",
       "date": "2023-06-14",
       "isFavorited": false
     },
@@ -205,6 +220,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg",
       "strTags": "rice",
       "strYoutube": "https://www.youtube.com/watch?v=rllQsUw1hFQ",
+      "mealPreparationTime": "1 hours",
       "date": "2023-07-21",
       "isFavorited": false
     },
@@ -218,6 +234,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/yqqqwu1511816912.jpg",
       "strTags": "Pudding",
       "strYoutube": "https://www.youtube.com/watch?v=WFvj71RZYPc",
+      "mealPreparationTime": "45 minutes",
       "date": "2024-01-11",
       "isFavorited": false
     },
@@ -231,6 +248,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
       "strTags": "Pasta,BBQ,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=_T6jkRvhlkk",
+      "mealPreparationTime": "30 minutes",
+      "date":"2024-03-21"
       "date": "2024-03-21",
       "isFavorited": true
     },
@@ -244,6 +263,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/lwsnkl1604181187.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aASr5x0d3Ys",
+      "mealPreparationTime": "30 minutes",
       "date": "2023-01-25",
       "isFavorited": false
     },
@@ -257,6 +277,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/t3r3ka1560461972.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=IqXEZUk4hWI",
+      "mealPreparationTime": "30 minutes",
       "date": "2023-10-21",
       "isFavorited": false
     },
@@ -270,6 +291,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
       "strTags": "Meat",
       "strYoutube": "https://www.youtube.com/watch?v=gh48wM6bPWQ",
+      "mealPreparationTime": "4 hours",
       "date": "2024-01-10",
       "isFavorited": false
     },
@@ -283,6 +305,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg",
       "strTags": "Pasta,Meat,Dairy",
       "strYoutube": "https://www.youtube.com/watch?v=qCIbq8HywpQ",
+      "mealPreparationTime": "45 minutes",
       "date": "2023-12-16",
       "isFavorited": false
     },
@@ -296,6 +319,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/c7lzrl1683208757.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=4mINk5d2hto",
+      "mealPreparationTime": "1 hour",
       "date": "2021-12-26",
       "isFavorited": false
     },
@@ -309,6 +333,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/hx335q1619789561.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=cl4YH8wblRs",
+      "mealPreparationTime": "30 minutes",
       "date": "2022-01-29",
       "isFavorited": false
     },
@@ -322,6 +347,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Q24haJU-1dI",
+      "mealPreparationTime": "1 hour",
       "date": "2023-10-25",
       "isFavorited": false
     },
@@ -335,6 +361,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/ssxvup1511387476.jpg",
       "strTags": "Desert,Pudding,Fruity",
       "strYoutube": "https://www.youtube.com/watch?v=SNeO28BCpsc",
+      "mealPreparationTime": "1 hour",
       "date": "2024-03-22",
       "isFavorited": true
     },
@@ -348,6 +375,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/sxrpws1511555907.jpg",
       "strTags": "Pie",
       "strYoutube": "https://www.youtube.com/watch?v=NCyPaaUNYUk",
+      "mealPreparationTime": "2 hours",
       "date": "2023-04-22",
       "isFavorited": false
     },
@@ -361,6 +389,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
       "strTags": "Seafood,Spicy,Speciality,Easter",
       "strYoutube": "https://www.youtube.com/watch?v=nF6DOtGE6k8",
+      "mealPreparationTime": "30 minutes",
       "date": "2023-09-22",
       "isFavorited": false
     },
@@ -374,6 +403,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/9ptx0a1565090843.jpg",
       "strTags": "Soup,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=5YV0sJLtLt8",
+      "mealPreparationTime": "2 hours",
       "date": "2022-03-13",
       "isFavorited": false
     },
@@ -387,6 +417,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/t8mn9g1560460231.jpg",
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=w1qgTQmLRe4",
+      "mealPreparationTime": "1 hour",
       "date": "2022-03-12",
       "isFavorited": false
     },
@@ -400,6 +431,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Ot-dmfBaZrA",
+      "mealPreparationTime": "3 hours",
       "date": "2023-01-22",
       "isFavorited": false
     },
@@ -413,6 +445,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/jcr46d1614763831.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=7tDWOpnIhok",
+      "mealPreparationTime": "1 hour",
       "date": "2023-10-22",
       "isFavorited": false
     },
@@ -426,6 +459,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=pOJEmDBgtSk",
+      "mealPreparationTime": "1 hour",
       "date": "2024-03-25",
       "isFavorited": true
     },
@@ -439,6 +473,7 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg",
       "strTags": "",
       "strYoutube": "",
+      "mealPreparationTime": "3 hours",
       "date": "2023-04-22",
       "isFavorited": false
     },
@@ -452,8 +487,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/uttuxy1511382180.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=wuZffe60q4M",
-      "date": "2023-12-22",
-      "isFavorited": false
+      "mealPreparationTime": "1 hour",
+      "date":"2023-12-22"
     }
   ]
 }
