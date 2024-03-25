@@ -152,3 +152,18 @@ button:focus-visible {
   .meal-details button:active {
     background-color: #0056b3;
   }
+
+  .timer-icon {
+    font-size: 20px;
+    color: #000;
+  }
+
+  .timer-icon-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 4px;
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;
+  }

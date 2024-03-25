@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 function CategoryFilter({ bites, selectedCategory, onCategoryChange }) {
@@ -8,7 +7,6 @@ function CategoryFilter({ bites, selectedCategory, onCategoryChange }) {
   - selectedCategory: a string representing the selected category.
   - onCategoryChange: a function that will be called when the selected category changes.
   */
-
   CategoryFilter.propTypes = {
     bites: PropTypes.array.isRequired,
     selectedCategory: PropTypes.string.isRequired,
