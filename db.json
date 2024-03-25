@@ -11,7 +11,8 @@
       "strYoutube": "https://www.youtube.com/watch?v=1IszT_guI08",
       "id": "320a",
       "mealPreparationTime": "30 minutes",
-      "date":"2023-07-31"
+      "date": "2023-07-31",
+      "isFavorited": false
     },
     {
       "id": "75fd",
@@ -24,7 +25,8 @@
       "strTags": "Christmas",
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
       "mealPreparationTime": "45 minutes",
-      "date":"2024-01-19"
+      "date": "2024-01-19",
+      "isFavorited": false
     },
     {
       "id": "e7b2",
@@ -37,7 +39,8 @@
       "strTags": "Chocolate,Desert,Snack",
       "strYoutube": "https://www.youtube.com/watch?v=Pi89PqsAaAg",
       "mealPreparationTime": "50 minutes",
-      "date":"2023-12-15"
+      "date": "2023-12-15",
+      "isFavorited": false
     },
     {
       "id": "c626",
@@ -50,7 +53,8 @@
       "strTags": null,
       "strYoutube": "",
       "mealPreparationTime": "1 hour",
-      "date":"2023-10-21"
+      "date": "2023-10-21",
+      "isFavorited": false
     },
     {
       "id": "6c21",
@@ -63,7 +67,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=6R8ffRRJcrg",
       "mealPreparationTime": "35 minutes",
-      "date":"2023-08-06"
+      "date": "2023-08-06",
+      "isFavorited": false
     },
     {
       "id": "e59b",
@@ -76,7 +81,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=fEN_fm6kX6k",
       "mealPreparationTime": "50 minutes",
-      "date":"2023-11-30"
+      "date": "2023-11-30",
+      "isFavorited": false
     },
     {
       "id": "f195",
@@ -89,7 +95,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
       "mealPreparationTime": "3 hours",
-      "date":"2024-02-29"
+      "date": "2024-02-29",
+      "isFavorited": true
     },
     {
       "id": "6399",
@@ -102,7 +109,8 @@
       "strTags": "Pasta,Cheasy,Meat",
       "strYoutube": "https://www.youtube.com/watch?v=bwTSmLTZKNg",
       "mealPreparationTime": "45 minutes",
-      "date":"2024-01-01"
+      "date": "2024-01-01",
+      "isFavorited": false
     },
     {
       "id": "c6ed",
@@ -115,8 +123,8 @@
       "strTags": "Vegetarian",
       "strYoutube": "https://www.youtube.com/watch?v=BiQUYTBb6eQ",
       "mealPreparationTime": "2 hours",
-      "date":"2023-05-20"
-      
+      "date": "2023-05-20",
+      "isFavorited": false
     },
     {
       "id": "89f9",
@@ -129,7 +137,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=B0YX0yPX4Wo",
       "mealPreparationTime": "50 minutes",
-      "date":"2022-09-13"
+      "date": "2022-09-13",
+      "isFavorited": false
     },
     {
       "id": "0f7c",
@@ -142,7 +151,8 @@
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=ipEz5u2T7KM",
       "mealPreparationTime": "2 hours",
-      "date":"2022-04-14"
+      "date": "2022-04-14",
+      "isFavorited": false
     },
     {
       "id": "95d4",
@@ -155,7 +165,8 @@
       "strTags": "Curry,Vegetarian,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=J4D855Q9-jg",
       "mealPreparationTime": "1 hour",
-      "date":"2023-02-21"
+      "date": "2023-02-21",
+      "isFavorited": false
     },
     {
       "id": "c90e",
@@ -168,7 +179,8 @@
       "strTags": null,
       "strYoutube": "",
       "mealPreparationTime": "45 minutes",
-      "date":"2022-02-22"
+      "date": "2022-02-22",
+      "isFavorited": false
     },
     {
       "id": "97c7",
@@ -181,7 +193,8 @@
       "strTags": "Desert,Dairy,Pudding,Cake,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=tspdJ6hxqnc",
       "mealPreparationTime": "5 hours",
-      "date":"2022-05-03"
+      "date": "2022-05-03",
+      "isFavorited": false
     },
     {
       "id": "653d",
@@ -194,7 +207,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=JYtMjKa6cdY",
       "mealPreparationTime": "30 minutes",
-      "date":"2023-06-14"
+      "date": "2023-06-14",
+      "isFavorited": false
     },
     {
       "id": "7c10",
@@ -207,7 +221,8 @@
       "strTags": "rice",
       "strYoutube": "https://www.youtube.com/watch?v=rllQsUw1hFQ",
       "mealPreparationTime": "1 hours",
-      "date":"2023-07-21"
+      "date": "2023-07-21",
+      "isFavorited": false
     },
     {
       "id": "d572",
@@ -220,7 +235,8 @@
       "strTags": "Pudding",
       "strYoutube": "https://www.youtube.com/watch?v=WFvj71RZYPc",
       "mealPreparationTime": "45 minutes",
-      "date":"2024-01-11"
+      "date": "2024-01-11",
+      "isFavorited": false
     },
     {
       "id": "8673",
@@ -234,6 +250,8 @@
       "strYoutube": "https://www.youtube.com/watch?v=_T6jkRvhlkk",
       "mealPreparationTime": "30 minutes",
       "date":"2024-03-21"
+      "date": "2024-03-21",
+      "isFavorited": true
     },
     {
       "id": "aa5d",
@@ -246,7 +264,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aASr5x0d3Ys",
       "mealPreparationTime": "30 minutes",
-      "date":"2023-01-25"
+      "date": "2023-01-25",
+      "isFavorited": false
     },
     {
       "id": "2207",
@@ -259,7 +278,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=IqXEZUk4hWI",
       "mealPreparationTime": "30 minutes",
-      "date":"2023-10-21"
+      "date": "2023-10-21",
+      "isFavorited": false
     },
     {
       "id": "7297",
@@ -272,7 +292,8 @@
       "strTags": "Meat",
       "strYoutube": "https://www.youtube.com/watch?v=gh48wM6bPWQ",
       "mealPreparationTime": "4 hours",
-      "date":"2024-01-10"
+      "date": "2024-01-10",
+      "isFavorited": false
     },
     {
       "id": "4332",
@@ -285,7 +306,8 @@
       "strTags": "Pasta,Meat,Dairy",
       "strYoutube": "https://www.youtube.com/watch?v=qCIbq8HywpQ",
       "mealPreparationTime": "45 minutes",
-      "date":"2023-12-16"
+      "date": "2023-12-16",
+      "isFavorited": false
     },
     {
       "id": "8135",
@@ -298,7 +320,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=4mINk5d2hto",
       "mealPreparationTime": "1 hour",
-      "date":"2021-12-26"
+      "date": "2021-12-26",
+      "isFavorited": false
     },
     {
       "id": "386e",
@@ -311,7 +334,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=cl4YH8wblRs",
       "mealPreparationTime": "30 minutes",
-      "date":"2022-01-29"
+      "date": "2022-01-29",
+      "isFavorited": false
     },
     {
       "id": "8acc",
@@ -324,7 +348,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Q24haJU-1dI",
       "mealPreparationTime": "1 hour",
-      "date":"2023-10-25"
+      "date": "2023-10-25",
+      "isFavorited": false
     },
     {
       "id": "a349",
@@ -337,7 +362,8 @@
       "strTags": "Desert,Pudding,Fruity",
       "strYoutube": "https://www.youtube.com/watch?v=SNeO28BCpsc",
       "mealPreparationTime": "1 hour",
-      "date":"2024-03-22"
+      "date": "2024-03-22",
+      "isFavorited": true
     },
     {
       "id": "23aa",
@@ -350,7 +376,8 @@
       "strTags": "Pie",
       "strYoutube": "https://www.youtube.com/watch?v=NCyPaaUNYUk",
       "mealPreparationTime": "2 hours",
-      "date":"2023-04-22"
+      "date": "2023-04-22",
+      "isFavorited": false
     },
     {
       "id": "2dc0",
@@ -363,7 +390,8 @@
       "strTags": "Seafood,Spicy,Speciality,Easter",
       "strYoutube": "https://www.youtube.com/watch?v=nF6DOtGE6k8",
       "mealPreparationTime": "30 minutes",
-      "date":"2023-09-22"
+      "date": "2023-09-22",
+      "isFavorited": false
     },
     {
       "id": "6886",
@@ -376,7 +404,8 @@
       "strTags": "Soup,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=5YV0sJLtLt8",
       "mealPreparationTime": "2 hours",
-      "date":"2022-03-13"
+      "date": "2022-03-13",
+      "isFavorited": false
     },
     {
       "id": "308e",
@@ -389,7 +418,8 @@
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=w1qgTQmLRe4",
       "mealPreparationTime": "1 hour",
-      "date":"2022-03-12"
+      "date": "2022-03-12",
+      "isFavorited": false
     },
     {
       "id": "8f7d",
@@ -402,7 +432,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Ot-dmfBaZrA",
       "mealPreparationTime": "3 hours",
-      "date":"2023-01-22"
+      "date": "2023-01-22",
+      "isFavorited": false
     },
     {
       "id": "160a",
@@ -415,7 +446,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=7tDWOpnIhok",
       "mealPreparationTime": "1 hour",
-      "date":"2023-10-22"
+      "date": "2023-10-22",
+      "isFavorited": false
     },
     {
       "id": "df7a",
@@ -428,7 +460,8 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=pOJEmDBgtSk",
       "mealPreparationTime": "1 hour",
-      "date":"2024-03-25"
+      "date": "2024-03-25",
+      "isFavorited": true
     },
     {
       "id": "8ded",
@@ -441,7 +474,8 @@
       "strTags": "",
       "strYoutube": "",
       "mealPreparationTime": "3 hours",
-      "date":"2023-04-22"
+      "date": "2023-04-22",
+      "isFavorited": false
     },
     {
       "id": "e304",
@@ -456,6 +490,5 @@
       "mealPreparationTime": "1 hour",
       "date":"2023-12-22"
     }
-    
   ]
 }
