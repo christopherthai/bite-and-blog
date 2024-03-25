@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Bite() {
+function Bite({selectedMeal}) {
   const [recent, setRecent] = useState([]);
 
   useEffect(() => {
@@ -47,20 +48,21 @@ function Bite() {
       <div style={{ display: 'flex' }}>
         {recent.length > 0 ? (
           recent.map((meal, index) => (
-            <div key={meal.id} style={{ marginRight: index !== 2 ? '3px' : '0', position: 'relative' }}>
+            <div key={meal.id} style={{ marginRight: index !== 2 ? '3px' : '0', position: 'relative', left:'50px', bottom:"0px" }}>
               {meal.strMealThumb && 
               <div>
-                <Link to={`/allbites`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to={`/ShowcaseBite/${meal.id}`} key={meal.id} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <img style={{
-                    width:"40rem", 
-                    height:"25rem",
+                    width:"24rem", 
+                    height:"13rem",
                     borderRadius: '10px',
                     objectFit: 'cover',                 
-                    overflow: 'hidden'}}
+                    overflow: 'hidden',
+                    }}
                     src={meal.strMealThumb} alt={meal.strMeal} />
                   <h2 style={{ 
                       position: 'absolute', 
-                      bottom: '30px', 
+                      bottom: '0px', 
                       left: '15px', 
                       color: 'white',
                       backgroundColor: 'black',
@@ -80,5 +82,10 @@ function Bite() {
     </div>
   );
 }
+
+Bite.propTypes = {
+    selectedMeal: PropTypes.object, // selectedMeal props가 객체임을 검사
+  };
+
 
 export default Bite;
