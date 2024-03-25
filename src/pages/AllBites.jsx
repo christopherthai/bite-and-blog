@@ -105,8 +105,8 @@ function AllBites() {
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
               <h2>{bite.strMeal}</h2>
-              <div className="icon-container">
-                <MdTimer className="icon" />
+              <div className="timer-icon-container">
+                <MdTimer className="timer-icon" />
                 <p>{bite.mealPreparationTime}</p>
               </div>
               <p>Category: {bite.strCategory}</p>

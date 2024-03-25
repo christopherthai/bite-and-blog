@@ -153,12 +153,12 @@ button:focus-visible {
     background-color: #0056b3;
   }
 
-  .icon {
+  .timer-icon {
     font-size: 20px;
     color: #000;
   }
 
-  .icon-container {
+  .timer-icon-container {
     display: flex;
     justify-content: right;
     align-items: right;
