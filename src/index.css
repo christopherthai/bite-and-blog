@@ -167,3 +167,11 @@ button:focus-visible {
     position: relative;
     z-index: 2;
   }
+
+  .search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 20%;
+    margin-bottom: 20px;
+  }

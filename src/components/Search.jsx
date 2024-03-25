@@ -2,8 +2,9 @@ import PropTypes from 'prop-types';
 
 function Search({ search, onHandleSearch }) {
   return (
-    <div className="searchbar">
+    <div className="search-bar">
       <input
+        className="search-input"
         type="text"
         id="search"
         placeholder="Type a name to search..."
