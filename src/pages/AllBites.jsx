@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
 import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
+import { MdTimer } from 'react-icons/md'; 
 
 function AllBites() {
   const [bites, setBites] = useState([]);
@@ -104,6 +105,10 @@ function AllBites() {
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
               <h2>{bite.strMeal}</h2>
+              <div className="icon-container">
+                <MdTimer className="icon" />
+                <p>{bite.mealPreparationTime}</p>
+              </div>
               <p>Category: {bite.strCategory}</p>
               <p>
                 {bite.showFullDescription
