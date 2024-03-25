@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 function AddBiteForm() {
-    const [addMeal, setAddMeal] = useState({
+
+    const blankMeal = {
         strMeal: '',
         strCategory: '',
         strArea: '',
@@ -9,7 +10,8 @@ function AddBiteForm() {
         strMealThumb: '',
         strTags: '',
         strYoutube: '',
-    });
+    }
+    const [addMeal, setAddMeal] = useState(blankMeal);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -20,10 +22,12 @@ function AddBiteForm() {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
+
         const now = new Date();
         const date = now.toISOString().split('T')[0];
         const mealDataWithDate = {...addMeal, date};
         console.log(addMeal);
+    
         fetch('http://localhost:4000/meals/', {
             method:'POST',
             headers: {
@@ -34,6 +38,7 @@ function AddBiteForm() {
             .then(res=>res.json())
             .then(data => console.log(`Posted meal`, data))
             .catch(error=> console.log('Error adding plant:', error));
+            setAddMeal(blankMeal);
         
     };
 
