@@ -21,3 +21,5 @@ function Favorite({ id, isFavorited, handleFavoriteBite }) {
       </button>
     );
   }
+
+  export default Favorite;
