@@ -24,8 +24,8 @@ function AddBiteForm() {
         e.preventDefault();
 
         const now = new Date();
-        const dateStamp = now.toISOString().split('T')[0];
-        const mealDataWithDate = {...addMeal, dateStamp};
+        const date = now.toISOString().split('T')[0];
+        const mealDataWithDate = {...addMeal, date};
         console.log(addMeal);
     
         fetch('http://localhost:4000/meals/', {
