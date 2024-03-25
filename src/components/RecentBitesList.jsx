@@ -46,7 +46,7 @@ function RecentBitesList({ selectedMeal }) {
               height: '16rem',
               position: 'absolute',
               top: `${ 15 + 17 * index}%`,
-              right: '70px',
+              right: '40px',
               backgroundImage: `url(${item.strMealThumb})`,
               backgroundSize: 'cover',
               filter: hoveredCard === index ? 'brightness(110%)' : 'none',
