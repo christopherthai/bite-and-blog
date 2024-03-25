@@ -69,10 +69,10 @@ function MainContent() {
       {selectedMeal && (
         <Card
           style={{
-            width: '80rem',
-            height: '910px',
+            width: '60rem',
+            height: '550px',
             position: 'absolute',
-            top: '10%',
+            top: '12%',
             left: '33%',
             transform: 'translateX(-50%)',
             overflow: 'hidden',

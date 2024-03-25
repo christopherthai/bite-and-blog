@@ -35,20 +35,21 @@ function RecentBitesList({ selectedMeal }) {
 
   return (
     <div>
-      <h2 style={{ position: 'absolute', top: '10%', right: '12%', fontSize: '30pt' }}>
+      <h2 style={{ position: 'absolute', top: '8%', right: '12%', fontSize: '25pt'}}>
         Recent Bites
       </h2>
       {recent.map((item, index) => (
         <Link to={`/ShowcaseBite/${item.id}`} key={index}> {/* Link 컴포넌트를 카드 요소로 감싸기 */}
           <Card
             style={{
-              width: '35rem',
-              height: '16rem',
+              width: '28rem',
+              height: '10rem',
               position: 'absolute',
-              top: `${ 15 + 17 * index}%`,
-              right: '40px',
+              top: `${ 12 + 18 * index}%`,
+              right: '100px',
               backgroundImage: `url(${item.strMealThumb})`,
               backgroundSize: 'cover',
+              backgroundPosition: 'center',
               filter: hoveredCard === index ? 'brightness(110%)' : 'none',
               transition: 'filter 0.5s ease',
             }}
@@ -62,7 +63,8 @@ function RecentBitesList({ selectedMeal }) {
                   backgroundColor: 'black', 
                   padding: '5px', 
                   display: 'inline-block', 
-                  position: 'relative' 
+                  position: 'relative',
+                  fontSize: '10pt'
                 }}
               >
                 {item.strMeal}
