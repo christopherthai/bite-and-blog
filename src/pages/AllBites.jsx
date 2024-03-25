@@ -26,7 +26,6 @@ function AllBites() {
             sortedMeals.map((meal) => ({
               ...meal,
               showFullDescription: false,
-              isFavorited: false,
             }))
           );
         } else {
@@ -54,7 +53,6 @@ function AllBites() {
     );
     setBites(updatedBites);
   }
- 
 
   // Update the sort state
   const handleSortChange = (e) => {
@@ -190,29 +188,26 @@ function AllBites() {
                   ? bite.strInstructions
                   : `${bite.strInstructions.slice(0, 100)}...`}
               </p>
-            <div className="button-container">
-              {!bite.showFullDescription && (
-                <button onClick={() => toggleDescription(bite.id)}>
-                  Quick View
-                </button>
-              )}
-              {bite.showFullDescription && (
-                <button onClick={() => toggleDescription(bite.id)}>
-                  Read less
-                </button>
-              )}
+              <div className="button-container">
+                {!bite.showFullDescription && (
+                  <button onClick={() => toggleDescription(bite.id)}>
+                    Quick View
+                  </button>
+                )}
+                {bite.showFullDescription && (
+                  <button onClick={() => toggleDescription(bite.id)}>
+                    Read less
+                  </button>
+                )}
 
-              
-
-              <button className="delete" onClick={() => deleteBite(bite.id)}>
-                Delete
-              </button>
-            </div>
+                <button className="delete" onClick={() => deleteBite(bite.id)}>
+                  Delete
+                </button>
+              </div>
               <Favorite
-                id={bite.idMeal}
+                id={bite.id}
                 isFavorited={bite.isFavorited}
                 handleFavoriteBite={handleFavoriteBite}
-                
               />
 
               <p>Date: {bite.date}</p>

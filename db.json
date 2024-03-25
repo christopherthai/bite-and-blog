@@ -12,7 +12,7 @@
       "id": "320a",
       "mealPreparationTime": "30 minutes",
       "date": "2023-07-31",
-      "isFavorited": false
+      "isFavorited": true
     },
     {
       "id": "75fd",
@@ -26,7 +26,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
-      "isFavorited": false
+      "isFavorited": true
     },
     {
       "id": "e7b2",
@@ -249,7 +249,7 @@
       "strTags": "Pasta,BBQ,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=_T6jkRvhlkk",
       "mealPreparationTime": "30 minutes",
-      "date":"2024-03-21",
+      "date": "2024-03-21",
       "isFavorited": true
     },
     {
@@ -487,7 +487,7 @@
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=wuZffe60q4M",
       "mealPreparationTime": "1 hour",
-      "date":"2023-12-22"
+      "date": "2023-12-22"
     }
   ]
 }
