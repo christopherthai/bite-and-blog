@@ -3,7 +3,6 @@ import Search from "../components/Search";
 import CategoryFilter from "../components/CategoryFilter";
 import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
-import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
 
 function AllBites() {

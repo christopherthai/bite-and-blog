@@ -37,7 +37,7 @@ function AddBiteForm() {
         })
             .then(res=>res.json())
             .then(data => console.log(`Posted meal`, data))
-            .catch(error=> console.log('Error adding plant:', error));
+            .catch(error=> console.log('Error posting meal:', error));
             setAddMeal(blankMeal);
         
     };
