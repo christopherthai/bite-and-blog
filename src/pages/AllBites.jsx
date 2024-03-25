@@ -34,10 +34,10 @@ function AllBites() {
   }, []);
 
   // Function to toggle full description
-  const toggleDescription = (index) => {
+  const toggleDescription = (id) => {
     setBites((prevBites) =>
-      prevBites.map((bite, i) =>
-        i === index
+      prevBites.map((bite) =>
+        bite.id === id
           ? { ...bite, showFullDescription: !bite.showFullDescription }
           : bite
       )
@@ -45,10 +45,10 @@ function AllBites() {
   };
 
   // Function to toggle favorite status
-  const toggleFavorite = (index) => {
+  const toggleFavorite = (id) => {
     setBites((prevBites) =>
-      prevBites.map((bite, i) =>
-        i === index ? { ...bite, isFavorited: !bite.isFavorited } : bite
+      prevBites.map((bite) =>
+        bite.id === id ? { ...bite, isFavorited: !bite.isFavorited } : bite
       )
     );
   };
@@ -99,7 +99,7 @@ function AllBites() {
         onCategoryChange={handleCategoryChange}
       />
       <div className="meal-grid">
-        {filteredBites.map((bite, index) => (
+        {filteredBites.map((bite) => (
           <div key={bite.idMeal} className="meal">
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
@@ -112,19 +112,19 @@ function AllBites() {
               </p>
 
               {!bite.showFullDescription && (
-                <button onClick={() => toggleDescription(index)}>
+                <button onClick={() => toggleDescription(bite.id)}>
                   Read more
                 </button>
               )}
               {bite.showFullDescription && (
-                <button onClick={() => toggleDescription(index)}>
+                <button onClick={() => toggleDescription(bite.id)}>
                   Read less
                 </button>
               )}
 
               <Favorite
                 isFavorited={bite.isFavorited}
-                toggleFavorite={() => toggleFavorite(index)}
+                toggleFavorite={() => toggleFavorite(bite.id)}
               />
 
               <button className="delete" onClick={() => deleteBite(bite.id)}>

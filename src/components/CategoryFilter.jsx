@@ -15,7 +15,7 @@ function CategoryFilter({ bites, selectedCategory, onCategoryChange }) {
     onCategoryChange: PropTypes.func.isRequired,
   };
 
-  const bitesCategoriesSet = new Set(bites.map((bite) => bite.strCategory)); // Create a set of categories
+  const bitesCategoriesSet = new Set(bites.map((bite) => bite.strCategory)); // Create a set of all categories
   const bitesCategories = Array.from(bitesCategoriesSet); // Convert the set to an array
 
   return (
