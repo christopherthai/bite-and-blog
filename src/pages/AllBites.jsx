@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
 import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
-import { MdTimer } from 'react-icons/md'; 
+import { MdTimer } from "react-icons/md";
+import SortFilter from "../components/SortFilter";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
@@ -55,6 +56,11 @@ function AllBites() {
     );
   };
 
+  // Update the sort state
+  const handleSortChange = (e) => {
+    setSort(e.target.value);
+  };
+
   // Update the selected category in the state
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
@@ -72,6 +78,73 @@ function AllBites() {
       (bite) =>
         selectedCategory === "All" || bite.strCategory === selectedCategory
     );
+
+  // Sort the bites based on the selected sort
+  const sortBites = (bites, sort) => {
+    switch (sort) {
+      case "Newest":
+        return bites.sort((a, b) => new Date(b.date) - new Date(a.date));
+      case "Oldest":
+        return bites.sort((a, b) => new Date(a.date) - new Date(b.date));
+      case "Alphabetically":
+        return bites.sort((a, b) => a.strMeal.localeCompare(b.strMeal));
+      case "Shortest Preparation Time":
+        return bites.sort((a, b) => {
+          let lowerCaseA = a.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let lowerCaseB = b.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let aTime;
+          let bTime;
+
+          if (lowerCaseA.includes("hour") && lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return aTime - bTime;
+          } else if (lowerCaseA.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return aTime - bTime;
+          } else if (lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return aTime - bTime;
+          } else {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return aTime - bTime;
+          }
+        });
+      case "Longest Preparation Time":
+        return bites.sort((a, b) => {
+          let lowerCaseA = a.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let lowerCaseB = b.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let aTime;
+          let bTime;
+
+          if (lowerCaseA.includes("hour") && lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return bTime - aTime;
+          } else if (lowerCaseA.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return bTime - aTime;
+          } else if (lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return bTime - aTime;
+          } else {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return bTime - aTime;
+          }
+        });
+      default:
+        return bites;
+    }
+  };
+
+  // Sorts the filtered bites based on the specified sort order.
+  const sortedBites = sortBites(filteredBites, sort);
 
   // Function to delete a bite in the database and update the state
   const deleteBite = (id) => {
@@ -100,8 +173,9 @@ function AllBites() {
         selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
       />
+      <SortFilter bites={bites} sort={sort} onSortChange={handleSortChange} />
       <div className="meal-grid">
-        {filteredBites.map((bite) => (
+        {sortedBites.map((bite) => (
           <div key={bite.idMeal} className="meal">
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
