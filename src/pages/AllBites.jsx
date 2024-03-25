@@ -45,13 +45,13 @@ function AllBites() {
   };
 
   // Function to toggle favorite status
-  const toggleFavorite = (id) => {
-    setBites((prevBites) =>
-      prevBites.map((bite) =>
-        bite.id === id ? { ...bite, isFavorited: !bite.isFavorited } : bite
-      )
+  function handleFavoriteBite(favoritedBite) {
+    const updatedBites = bites.map((bite) =>
+      bite.id === favoritedBite.id ? favoritedBite : bite
     );
-  };
+    setBites(updatedBites);
+  }
+ 
 
   // Update the selected category in the state
   const handleCategoryChange = (e) => {
@@ -110,10 +110,10 @@ function AllBites() {
                   ? bite.strInstructions
                   : `${bite.strInstructions.slice(0, 100)}...`}
               </p>
-
+            <div className="button-container">
               {!bite.showFullDescription && (
                 <button onClick={() => toggleDescription(bite.id)}>
-                  Read more
+                  Quick View
                 </button>
               )}
               {bite.showFullDescription && (
@@ -122,14 +122,19 @@ function AllBites() {
                 </button>
               )}
 
-              <Favorite
-                isFavorited={bite.isFavorited}
-                toggleFavorite={() => toggleFavorite(bite.id)}
-              />
+              
 
               <button className="delete" onClick={() => deleteBite(bite.id)}>
                 Delete
               </button>
+            </div>
+              <Favorite
+                id={bite.idMeal}
+                isFavorited={bite.isFavorited}
+                handleFavoriteBite={handleFavoriteBite}
+                
+              />
+
               <p>Date: {bite.date}</p>
               <Link to={`/ShowcaseBite/${bite.id}`} element>
                 See Full Bite Page

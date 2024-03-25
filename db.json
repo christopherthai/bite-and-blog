@@ -10,7 +10,8 @@
       "strTags": "Pasta,Curry",
       "strYoutube": "https://www.youtube.com/watch?v=1IszT_guI08",
       "id": "320a",
-      "date":"2023-07-31"
+      "date": "2023-07-31",
+      "isFavorited": false
     },
     {
       "id": "75fd",
@@ -22,7 +23,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/r33cud1576791081.jpg",
       "strTags": "Christmas",
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
-      "date":"2024-01-19"
+      "date": "2024-01-19",
+      "isFavorited": false
     },
     {
       "id": "e7b2",
@@ -34,7 +36,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
       "strTags": "Chocolate,Desert,Snack",
       "strYoutube": "https://www.youtube.com/watch?v=Pi89PqsAaAg",
-      "date":"2023-12-15"
+      "date": "2023-12-15",
+      "isFavorited": false
     },
     {
       "id": "c626",
@@ -46,7 +49,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
       "strTags": null,
       "strYoutube": "",
-      "date":"2023-10-21"
+      "date": "2023-10-21",
+      "isFavorited": false
     },
     {
       "id": "6c21",
@@ -58,7 +62,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=6R8ffRRJcrg",
-      "date":"2023-08-06"
+      "date": "2023-08-06",
+      "isFavorited": false
     },
     {
       "id": "e59b",
@@ -70,7 +75,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=fEN_fm6kX6k",
-      "date":"2023-11-30"
+      "date": "2023-11-30",
+      "isFavorited": false
     },
     {
       "id": "f195",
@@ -82,7 +88,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/n41ny81608588066.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
-      "date":"2024-02-29"
+      "date": "2024-02-29",
+      "isFavorited": true
     },
     {
       "id": "6399",
@@ -94,7 +101,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
       "strTags": "Pasta,Cheasy,Meat",
       "strYoutube": "https://www.youtube.com/watch?v=bwTSmLTZKNg",
-      "date":"2024-01-01"
+      "date": "2024-01-01",
+      "isFavorited": false
     },
     {
       "id": "c6ed",
@@ -106,8 +114,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg",
       "strTags": "Vegetarian",
       "strYoutube": "https://www.youtube.com/watch?v=BiQUYTBb6eQ",
-      "date":"2023-05-20"
-      
+      "date": "2023-05-20",
+      "isFavorited": false
     },
     {
       "id": "89f9",
@@ -119,7 +127,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/vxuyrx1511302687.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=B0YX0yPX4Wo",
-      "date":"2022-09-13"
+      "date": "2022-09-13",
+      "isFavorited": false
     },
     {
       "id": "0f7c",
@@ -131,7 +140,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/n1hcou1628770088.jpg",
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=ipEz5u2T7KM",
-      "date":"2022-04-14"
+      "date": "2022-04-14",
+      "isFavorited": false
     },
     {
       "id": "95d4",
@@ -143,7 +153,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg",
       "strTags": "Curry,Vegetarian,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=J4D855Q9-jg",
-      "date":"2023-02-21"
+      "date": "2023-02-21",
+      "isFavorited": false
     },
     {
       "id": "c90e",
@@ -155,7 +166,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
       "strTags": null,
       "strYoutube": "",
-      "date":"2022-02-22"
+      "date": "2022-02-22",
+      "isFavorited": false
     },
     {
       "id": "97c7",
@@ -167,7 +179,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
       "strTags": "Desert,Dairy,Pudding,Cake,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=tspdJ6hxqnc",
-      "date":"2022-05-03"
+      "date": "2022-05-03",
+      "isFavorited": false
     },
     {
       "id": "653d",
@@ -179,7 +192,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=JYtMjKa6cdY",
-      "date":"2023-06-14"
+      "date": "2023-06-14",
+      "isFavorited": false
     },
     {
       "id": "7c10",
@@ -191,7 +205,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg",
       "strTags": "rice",
       "strYoutube": "https://www.youtube.com/watch?v=rllQsUw1hFQ",
-      "date":"2023-07-21"
+      "date": "2023-07-21",
+      "isFavorited": false
     },
     {
       "id": "d572",
@@ -203,7 +218,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/yqqqwu1511816912.jpg",
       "strTags": "Pudding",
       "strYoutube": "https://www.youtube.com/watch?v=WFvj71RZYPc",
-      "date":"2024-01-11"
+      "date": "2024-01-11",
+      "isFavorited": false
     },
     {
       "id": "8673",
@@ -215,7 +231,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
       "strTags": "Pasta,BBQ,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=_T6jkRvhlkk",
-      "date":"2024-03-21"
+      "date": "2024-03-21",
+      "isFavorited": true
     },
     {
       "id": "aa5d",
@@ -227,7 +244,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/lwsnkl1604181187.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=aASr5x0d3Ys",
-      "date":"2023-01-25"
+      "date": "2023-01-25",
+      "isFavorited": false
     },
     {
       "id": "2207",
@@ -239,7 +257,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/t3r3ka1560461972.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=IqXEZUk4hWI",
-      "date":"2023-10-21"
+      "date": "2023-10-21",
+      "isFavorited": false
     },
     {
       "id": "7297",
@@ -251,7 +270,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
       "strTags": "Meat",
       "strYoutube": "https://www.youtube.com/watch?v=gh48wM6bPWQ",
-      "date":"2024-01-10"
+      "date": "2024-01-10",
+      "isFavorited": false
     },
     {
       "id": "4332",
@@ -263,7 +283,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg",
       "strTags": "Pasta,Meat,Dairy",
       "strYoutube": "https://www.youtube.com/watch?v=qCIbq8HywpQ",
-      "date":"2023-12-16"
+      "date": "2023-12-16",
+      "isFavorited": false
     },
     {
       "id": "8135",
@@ -275,7 +296,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/c7lzrl1683208757.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=4mINk5d2hto",
-      "date":"2021-12-26"
+      "date": "2021-12-26",
+      "isFavorited": false
     },
     {
       "id": "386e",
@@ -287,7 +309,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/hx335q1619789561.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=cl4YH8wblRs",
-      "date":"2022-01-29"
+      "date": "2022-01-29",
+      "isFavorited": false
     },
     {
       "id": "8acc",
@@ -299,7 +322,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Q24haJU-1dI",
-      "date":"2023-10-25"
+      "date": "2023-10-25",
+      "isFavorited": false
     },
     {
       "id": "a349",
@@ -311,7 +335,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/ssxvup1511387476.jpg",
       "strTags": "Desert,Pudding,Fruity",
       "strYoutube": "https://www.youtube.com/watch?v=SNeO28BCpsc",
-      "date":"2024-03-22"
+      "date": "2024-03-22",
+      "isFavorited": true
     },
     {
       "id": "23aa",
@@ -323,7 +348,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/sxrpws1511555907.jpg",
       "strTags": "Pie",
       "strYoutube": "https://www.youtube.com/watch?v=NCyPaaUNYUk",
-      "date":"2023-04-22"
+      "date": "2023-04-22",
+      "isFavorited": false
     },
     {
       "id": "2dc0",
@@ -335,7 +361,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
       "strTags": "Seafood,Spicy,Speciality,Easter",
       "strYoutube": "https://www.youtube.com/watch?v=nF6DOtGE6k8",
-      "date":"2023-09-22"
+      "date": "2023-09-22",
+      "isFavorited": false
     },
     {
       "id": "6886",
@@ -347,7 +374,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/9ptx0a1565090843.jpg",
       "strTags": "Soup,Cake",
       "strYoutube": "https://www.youtube.com/watch?v=5YV0sJLtLt8",
-      "date":"2022-03-13"
+      "date": "2022-03-13",
+      "isFavorited": false
     },
     {
       "id": "308e",
@@ -359,7 +387,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/t8mn9g1560460231.jpg",
       "strTags": "Soup",
       "strYoutube": "https://www.youtube.com/watch?v=w1qgTQmLRe4",
-      "date":"2022-03-12"
+      "date": "2022-03-12",
+      "isFavorited": false
     },
     {
       "id": "8f7d",
@@ -371,7 +400,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/bc8v651619789840.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=Ot-dmfBaZrA",
-      "date":"2023-01-22"
+      "date": "2023-01-22",
+      "isFavorited": false
     },
     {
       "id": "160a",
@@ -383,7 +413,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/jcr46d1614763831.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=7tDWOpnIhok",
-      "date":"2023-10-22"
+      "date": "2023-10-22",
+      "isFavorited": false
     },
     {
       "id": "df7a",
@@ -395,7 +426,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=pOJEmDBgtSk",
-      "date":"2024-03-25"
+      "date": "2024-03-25",
+      "isFavorited": true
     },
     {
       "id": "8ded",
@@ -407,7 +439,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/xb97a81583266727.jpg",
       "strTags": "",
       "strYoutube": "",
-      "date":"2023-04-22"
+      "date": "2023-04-22",
+      "isFavorited": false
     },
     {
       "id": "e304",
@@ -419,8 +452,8 @@
       "strMealThumb": "https://www.themealdb.com/images/media/meals/uttuxy1511382180.jpg",
       "strTags": null,
       "strYoutube": "https://www.youtube.com/watch?v=wuZffe60q4M",
-      "date":"2023-12-22"
+      "date": "2023-12-22",
+      "isFavorited": false
     }
-    
   ]
 }
