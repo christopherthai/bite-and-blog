@@ -10,7 +10,8 @@ import { MdTimer } from 'react-icons/md';
 function AllBites() {
   const [bites, setBites] = useState([]);
   const [search, setSearch] = useState(""); // Set the search state
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All"); // Set the selected category state
+  const [sort, setSort] = useState("Newest"); // Set the sort state
 
   useEffect(() => {
     fetch("http://localhost:4000/meals")

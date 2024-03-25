@@ -163,5 +163,7 @@ button:focus-visible {
     justify-content: right;
     align-items: right;
     gap: 4px;
-    margin-top: -26px; /* Adjust the value as needed */
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;
   }
