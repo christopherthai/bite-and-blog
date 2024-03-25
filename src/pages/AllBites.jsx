@@ -4,11 +4,13 @@ import CategoryFilter from "../components/CategoryFilter";
 import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
 import "../index.css";
+import { MdTimer } from 'react-icons/md'; 
 
 function AllBites() {
   const [bites, setBites] = useState([]);
   const [search, setSearch] = useState(""); // Set the search state
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All"); // Set the selected category state
+  const [sort, setSort] = useState("Newest"); // Set the sort state
 
   useEffect(() => {
     fetch("http://localhost:4000/meals")
@@ -103,6 +105,10 @@ function AllBites() {
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
               <h2>{bite.strMeal}</h2>
+              <div className="timer-icon-container">
+                <MdTimer className="timer-icon" />
+                <p>{bite.mealPreparationTime}</p>
+              </div>
               <p>Category: {bite.strCategory}</p>
               <p>
                 {bite.showFullDescription

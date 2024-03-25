@@ -43,7 +43,7 @@ function AddBiteForm() {
     };
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <div className="add-bite-form" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: '600px' }}>
                 <input
                 type="text"
