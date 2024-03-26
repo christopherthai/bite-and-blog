@@ -63,8 +63,8 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-family: Helvetica;
+  background-color: rgb(57, 209, 178)1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -123,6 +123,7 @@ button:focus-visible {
   
   .meal-details {
     padding: 10px;
+    position: relative;
   }
   
   .meal-details h2 {
@@ -168,3 +169,57 @@ button:focus-visible {
     z-index: 2;
   }
 
+
+  .search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .button-space {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Position the favorite button at the bottom right of the card */
+  .favorite-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .average-rating-icon-container {
+    display: flex;
+    gap: 4px;
+    margin-top: -4px;
+    margin-left: 400px; /* Adjust the value as needed */
+    position: absolute;
+    z-index: 2;
+  }
+
+  .star-rating-container {
+    display: flex;
+    gap: 4px;
+    margin-top: -4px;
+    margin-left: auto; /* Move to the right */
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .average-rating-number {
+    font-size: 25px;
+    margin-top: -3px;
+  } */
+
+  .line {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 63%;
+  }
