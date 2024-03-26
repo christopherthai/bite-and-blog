@@ -5,7 +5,7 @@ import StarRatings from "react-star-ratings";
 
 function ShowcaseBite() {
   const [bite, setBite] = useState([]);
-  const [rating, setRating] = useState([]);
+  const [rating, setRating] = useState([]); // Use rating state to store the rating value
   const [comment, setComment] = useState("");
   const { id } = useParams();
   const navigate = useNavigate(); // Use useNavigate to go back one page
@@ -24,17 +24,22 @@ function ShowcaseBite() {
     return <div>Loading...</div>;
   }
 
-  // Function to handle rating and submit to the server
+  /**
+   * Handles the rating of a bite.
+   * @param {number} rate - The rating value.
+   */
   const handleRating = (rate) => {
     setRating(rate);
 
+    // Create a new rating array with the new rating value
     const newRating = [
       ...(bite.rating || []), // Provide a default value
       {
         rating: rate,
       },
     ];
-    // Submit the new rating to the server using PUT method and update the bite state
+
+    // Submit the new rating to the server using PUT method that replaces the existing rating array with the new rating array
     fetch(`http://localhost:4000/meals/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
