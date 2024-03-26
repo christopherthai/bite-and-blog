@@ -46,7 +46,7 @@ function RecentBitesList({ selectedMeal }) {
           borderRadius: '0px',
           justifyContent:'center', 
           textAlign:'center',
-          color:'lightgreen',
+          color:'black',
           backgroundColor: 'white'
         }}>
         RECENT BITES

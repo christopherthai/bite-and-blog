@@ -9,11 +9,11 @@ function Home() {
   const [selectedMeal, setSelectedMeal] = useState(null);
 
   return (
-    <>
+    <div style={{maxHeight:'100vh', overflow:'hidden',}}>
       <MainContent selectedMeal={selectedMeal} setSelectedMeal={setSelectedMeal}/>
       <RecentBitesList selectedMeal={selectedMeal} setSelectedMeal={setSelectedMeal}/>
       <Bite/>
-    </>
+    </div>
   );
 }
 

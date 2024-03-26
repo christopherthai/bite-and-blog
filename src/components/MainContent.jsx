@@ -104,7 +104,7 @@ function MainContent() {
             borderRadius: '0px', 
             textAlign:'center',
             lineHeight: '1.0',
-            color:'orange',
+            color:'',
             backgroundColor: 'white',
             }}>"ENJOY YOUR MEAL"<br/>"맛있게 드세요"<br/>"いただきます""BON APPÉTIT"
           </Card>
