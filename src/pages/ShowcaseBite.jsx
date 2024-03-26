@@ -45,7 +45,7 @@ function ShowcaseBite() {
   //Handles click of submit button for user feedback.
   const handleClick = (e) => {
     e.preventDefault();
-    const newFeedback = { name, rating, comment };
+    const newFeedback = { name, rating: rating || "", comment };
     const updatedFeedback = [...(feedback || []), newFeedback];
 
     fetch(`http://localhost:4000/meals/${id}`, {
@@ -68,10 +68,10 @@ function ShowcaseBite() {
 
   // Calculate the average rating of the bite using reduce method
   const averageRating =
-    bite.userFeedback && bite.userFeedback.length > 0
-      ? bite.userFeedback.reduce((acc, curr) => acc + curr.rating, 0) /
-        bite.userFeedback.length
-      : 0;
+  bite && bite.userFeedback && bite.userFeedback.length > 0
+    ? bite.userFeedback.reduce((acc, curr) => acc + curr.rating, 0) /
+      bite.userFeedback.length
+    : 0;
 
   const centerStyle = {
     display: "flex",
