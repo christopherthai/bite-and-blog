@@ -110,6 +110,7 @@ function ShowcaseBite() {
           <p>{bite.strInstructions}</p>
         </div>
         <a href={bite.strYoutube}>Link to YouTube Video</a>
+        <p style={{ maxWidth: "800px", height: '6px' }}>Meal Preparation Time: {bite.mealPreparationTime}</p>
         <p>Date: {bite.date}</p>
         {/* Comments and Rating container */}
         <div>
