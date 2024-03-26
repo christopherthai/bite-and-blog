@@ -164,7 +164,6 @@ function AllBites() {
 
   return (
     <main className="bites-container">
-      <h1>All Bites</h1>
       <Search search={search} onHandleSearch={handleSearch} />
       <CategoryFilter
         bites={bites}

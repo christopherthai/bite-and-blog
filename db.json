@@ -27,7 +27,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
-      "isFavorited": true,
+      "isFavorited": false,
       "rating": 0
     },
     {
@@ -102,7 +102,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
       "mealPreparationTime": "3 hours",
       "date": "2024-02-29",
-      "isFavorited": true,
+      "isFavorited": false,
       "rating": 0
     },
     {
@@ -223,7 +223,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2023-06-14",
       "isFavorited": false,
-      "rating": 0
+      "rating": 5
     },
     {
       "id": "7c10",
@@ -388,7 +388,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-22",
       "isFavorited": true,
-      "rating": 3
+      "rating": 5
     },
     {
       "id": "23aa",

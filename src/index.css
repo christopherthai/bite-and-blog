@@ -176,3 +176,20 @@ button:focus-visible {
     width: 20%;
     margin-bottom: 20px;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+    align-items: center; /* Align buttons vertically */
+  }
+  
+  .button-space {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Position the favorite button at the bottom right of the card */
+  .favorite-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
