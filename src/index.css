@@ -193,3 +193,12 @@ button:focus-visible {
     bottom: 10px;
     right: 10px;
   }
+
+  .average-rating-icon-container {
+    display: flex;
+    gap: 4px;
+    margin-top: -4px;
+    margin-left: 400px; /* Adjust the value as needed */
+    position: absolute;
+    z-index: 2;
+  }
