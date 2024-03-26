@@ -212,6 +212,7 @@ button:focus-visible {
   
   .image-container-about img.hidden {
     opacity: 0;
+  }
 
   .average-rating-icon-container {
     display: flex;

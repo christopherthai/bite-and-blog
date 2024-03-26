@@ -16,7 +16,7 @@ function About() {
     }, 3000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [currentImageIndex]); // Added currentImageIndex as a dependency
 
   const images = [sharedmeal, cookingathome, dinnerwithfriends, cooking];
 
