@@ -35,7 +35,7 @@ function RecentBitesList({ selectedMeal }) {
 
   return (
     
-    <div>
+    <div className="recent">
       <Card 
         style={{
           width:'650px', 

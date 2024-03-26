@@ -66,7 +66,7 @@ function MainContent() {
   };
 
   return (
-    <div>
+    <div className="recent">
       {selectedMeal && (
         <Card
           style={{
@@ -95,7 +95,7 @@ function MainContent() {
               transition: 'filter 0.5s ease', // 밝기에 대한 트랜지션 설정
             }}/>
 
-          <Card style={{
+          <Card  style={{
             width: '970px',
             height: '210px',
             bottom:'-20px',

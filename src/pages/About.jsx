@@ -23,7 +23,7 @@ function About() {
   return (
     <>
       <main className="wrapper">
-        <h1 className="headeronly"> Why Bite and Blog? </h1>
+        <h1> Why Bite and Blog? </h1>
         <p className="about-text">
           You don't need your own food blog to be a food blogger! Cooking, by
           nature, is a social act. Sharing meals or recipes with loved ones is a
@@ -31,7 +31,7 @@ function About() {
           share our favorite dishes, recipes or tips with each other - what made
           those biscuits so fluffy? We need to know! Feel free to share your
           dishes from your favorite restaurant, recipes from your kitchen at
-          home and beyond. Life is cheddar when shared with you!
+          home and beyond.  <strong>Life is cheddar when shared with you!</strong>
         </p>
         <div className="image-container-about">
           {images.map((image, index) => (

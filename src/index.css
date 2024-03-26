@@ -1,6 +1,6 @@
 :root {
  
-  font-family: KGRedHands;
+  font-family: Roboto;
   line-height: 1.5;
   font-weight: 400;
 
@@ -23,13 +23,10 @@
   src: url(./FiftiesMovies.ttf)
 }
 @font-face {
-  font-family: muffaroo;
-  src: url(./Muffaroo.ttf)
+  font-family: Roboto;
+  src: url(./RobotoCondensedVariableFontwght.ttf)
 }
-@font-face {
-  font-family: CheapPotatoes;
-  src: url(./CheapPotatoes.ttf)
-}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -42,9 +39,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  
+  font-family: Roboto;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Roboto;
 }
 img {
   max-width: 100%;
@@ -55,19 +53,19 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-wrap: balance;
+  font-family: FiftiesMovies;
 }
-.headeronly {
-  font-family: CheapPotatoes;
-  font-size: 20px;
+h2, h5 {
+  font-family: Roboto;
 }
-.biteonly {
-  font-family: CheapPotatoes;
-  font-size: 18px;
+p {
+font-family: Roboto;
 }
-
 header {
   font-family: FiftiesMovies;
-  
+}
+.recent {
+  font-family: Roboto;
 }
 button {
   border-radius: 8px;
@@ -108,9 +106,9 @@ button:focus-visible {
 
 .about-text {
   color: rgb(0, 0, 0); 
-  font-size: 18px; 
+  font-size: 20.5px; 
   line-height: 1.7;
-  font-family: KGRedHands;}
+  font-family: Roboto;}
 
   .bites-container {
     padding: 20px;
@@ -137,6 +135,7 @@ button:focus-visible {
   .meal-details {
     padding: 10px;
     position: relative;
+    font-family: Roboto;
   }
   
   .meal-details h2 {
