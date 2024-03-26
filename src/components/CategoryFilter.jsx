@@ -17,13 +17,19 @@ function CategoryFilter({ bites, selectedCategory, onCategoryChange }) {
   const bitesCategories = Array.from(bitesCategoriesSet); // Convert the set to an array
 
   return (
-    <select value={selectedCategory} onChange={onCategoryChange} className="category-filter">
+    <select
+      value={selectedCategory}
+      onChange={onCategoryChange}
+      className="category-filter"
+    >
       <option value="All">All</option>
-      {bitesCategories.map((category) => (
-        <option key={category} value={category}>
-          {category}
-        </option>
-      ))}
+      {bitesCategories
+        .sort() // Sort the categories alphabetically
+        .map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
     </select>
   );
 }
