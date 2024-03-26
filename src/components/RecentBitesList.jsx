@@ -18,10 +18,10 @@ function RecentBitesList({ selectedMeal }) {
         const sortedRecent = jsonData.sort((a, b) => b.date.localeCompare(a.date));
         const recentTenRecent = sortedRecent.slice(0, 3);
         setRecent(recentTenRecent);
-      } catch (error) {
+        } catch (error) {
         console.error('Error fetching data:', error);
-      }
-    };
+        }
+      };
     fetchData();
   }, []);
 
@@ -34,61 +34,65 @@ function RecentBitesList({ selectedMeal }) {
   };
 
   return (
+    
     <div>
-      <h2 style={{ position: 'absolute', top: '8%', right: '12%', fontSize: '25pt'}}>
-        Recent Bites
-      </h2>
-      {recent.map((item, index) => (
-        <Link to={`/ShowcaseBite/${item.id}`} key={index}> {/* Link 컴포넌트를 카드 요소로 감싸기 */}
-          <Card
-            style={{
-              width: '28rem',
-              height: '10rem',
-              position: 'absolute',
-              top: `${ 12 + 18 * index}%`,
-              right: '100px',
-              backgroundImage: `url(${item.strMealThumb})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              filter: hoveredCard === index ? 'brightness(110%)' : 'none',
-              transition: 'filter 0.5s ease',
-            }}
+      <Card 
+        style={{
+          width:'650px', 
+          height:'210px', 
+          bottom:'640px', 
+          left:'1020px', 
+          fontSize: '75pt', 
+          borderRadius: '0px',
+          justifyContent:'center', 
+          textAlign:'center',
+          color:'lightgreen',
+          backgroundColor: 'white'
+        }}>
+        RECENT BITES
+        </Card>
+
+        {recent.map((item, index) => (
+        <Link to={`/ShowcaseBite/${item.id}`} key={index}>
+
+        <Card 
+          style={{
+            left: '1020px',
+            bottom: '620px',
+            width: '650px',
+            height: '210px',
+            borderRadius: '0px',
+            marginBottom: '20px', // 각 카드의 아래쪽에 마진을 추가하여 간격 조절
+            backgroundImage: `url(${item.strMealThumb})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: hoveredCard === index ? 'brightness(110%)' : 'none',
+            transition: 'filter 0.5s ease',
+          }}
             onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-          >
+            onMouseLeave={handleMouseLeave}>
+
             <Card.Body>
               <Card.Title 
                 style={{ 
                   color: 'white', 
-                  backgroundColor: 'black', 
+                  backgroundColor: 'rgba(0, 0, 0, 0.5)', /* 배경색과 투명도 설정 */ 
                   padding: '5px', 
                   display: 'inline-block', 
                   position: 'relative',
-                  fontSize: '10pt'
-                }}
-              >
-                {item.strMeal}
-                <span style={{ 
-                  backgroundColor: 'black', 
-                  position: 'absolute', 
-                  width: `${item.strMeal.length * 0.7}ch`, 
-                  height: '100%', 
-                  top: 0, 
-                  left: 0, 
-                  zIndex: -1 
-                }}></span>
+                  fontSize: '15pt'
+                }}>
                 {item.strMeal}
               </Card.Title>
             </Card.Body>
-            {hoveredCard === index && selectedMeal && (
-              <Card.Title>
-                <Card.Text></Card.Text>
-                {/* Link 컴포넌트를 사용하여 특정 페이지로 이동 */}
-                <Link to={`/ShowcaseBite/${selectedMeal.id}`}></Link>
-              </Card.Title>
-            )}
+                
+                {hoveredCard === index && selectedMeal && (
+                <Card.Title></Card.Title>
+                )}
+
           </Card>
-        </Link>
+
+          </Link>
       ))}
     </div>
   );

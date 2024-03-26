@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
 import PropTypes from 'prop-types';
 
-function Bite({selectedMeal}) {
+function Bite() {
   const [recent, setRecent] = useState([]);
 
   useEffect(() => {
@@ -36,50 +37,58 @@ function Bite({selectedMeal}) {
   };
 
   return (
-    <div style={{
-      width: '116rem',
-      height: "25rem",
-      position: 'absolute',
-      top:"70%",
-      left:"2%",
-      justifyContent: 'space-between',
-    }}>
-      <h1></h1>
-      <div style={{ display: 'flex' }}>
+      <div>
         {recent.length > 0 ? (
           recent.map((meal, index) => (
-            <div key={meal.id} style={{ marginRight: index !== 2 ? '3px' : '0', position: 'relative', left:'50px', bottom:"0px" }}>
-              {meal.strMealThumb && 
-              <div>
-                <Link to={`/ShowcaseBite/${meal.id}`} key={meal.id} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <img style={{
-                    width:"24rem", 
-                    height:"13rem",
-                    borderRadius: '10px',
-                    objectFit: 'cover',                 
-                    overflow: 'hidden',
-                    }}
-                    src={meal.strMealThumb} alt={meal.strMeal} />
-                  <h2 style={{ 
-                      position: 'absolute', 
-                      bottom: '0px', 
-                      left: '15px', 
-                      color: 'white',
-                      backgroundColor: 'black',
-                      display: 'inline-block',
-                      fontSize: '15pt'
-                      }}>
-                          {meal.strMeal}
-                      </h2>
+            <Card key={meal.id} 
+                style={{ 
+                    position:'relative', 
+                    display:'inline-block', 
+                    width:'395px', 
+                    height:'210px', 
+                    left:'30px',
+                    borderRadius: '0px', 
+                    marginRight:'20px', 
+                    bottom:'620px',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}>
+                    {meal.strMealThumb && 
+            
+                <Link to={`/ShowcaseBite/${meal.id}`} key={meal.id} 
+                    style={{ 
+                        textDecoration: 'none', 
+                        color: 'inherit' 
+                    }}>
+                    <Card.Img 
+                        style={{ 
+                            width:"395px", 
+                            height:"210px", 
+                            borderRadius: '00px' 
+                            }} 
+                            src={meal.strMealThumb} 
+                            alt={meal.strMeal}
+                        />
+                    <Card.Title style={{ 
+                        position: 'absolute', 
+                        bottom: '10px', 
+                        left: '10px', 
+                        color: 'white', 
+                        backgroundColor: 'rgba(0, 0, 0, 0.5)', /* 배경색과 투명도 설정 */
+                        padding: '5px',
+                        fontSize: '15pt',
+                        zIndex: 1 /* 이미지 위에 위치하도록 설정 */
+                    }}>
+                    {meal.strMeal}
+                    </Card.Title>
                 </Link>
-              </div>}
-            </div>
+            }
+            </Card>
           ))
         ) : (
           <p>No recent posts available</p>
         )}
       </div>
-    </div>
   );
 }
 
