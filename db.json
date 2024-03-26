@@ -276,8 +276,9 @@
       "isFavorited": true,
       "userFeedback": [
         {
-          "name": "Sara",
-          "comment": "My favorite pasta dish ever"
+          "name": "test",
+          "rating": 5,
+          "comment": "test"
         }
       ]
     },
