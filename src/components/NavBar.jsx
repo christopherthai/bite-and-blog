@@ -10,6 +10,7 @@ function NavBar() {
         <NavLink to="/about">About</NavLink>
         <NavLink to="/addbite">Add Bites</NavLink>
         <NavLink to="/allbites">All Bites</NavLink>
+        <NavLink to="/favoritebites">Fav Bites</NavLink>
         </nav>
     )
 }

@@ -390,58 +390,10 @@
       "isFavorited": true,
       "rating": [
         {
-          "rating": 4
-        },
-        {
-          "rating": 5
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 5
-        },
-        {
           "rating": 5
         },
         {
           "rating": 1
-        },
-        {
-          "rating": 5
-        },
-        {
-          "rating": 2
-        },
-        {
-          "rating": 1
-        },
-        {
-          "rating": 5
-        },
-        {
-          "rating": 1
-        },
-        {
-          "rating": 1
-        },
-        {
-          "rating": 2
-        },
-        {
-          "rating": 5
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
         }
       ]
     },
@@ -548,7 +500,20 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-25",
       "isFavorited": true,
-      "rating": []
+      "rating": [
+        {
+          "rating": 5
+        },
+        {
+          "rating": 3
+        },
+        {
+          "rating": 2
+        },
+        {
+          "rating": 5
+        }
+      ]
     },
     {
       "id": "8ded",

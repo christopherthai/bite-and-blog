@@ -7,6 +7,7 @@ function AddBiteForm() {
         strCategory: '',
         strArea: '',
         strInstructions: '',
+        mealPreparationTime: '',
         strMealThumb: '',
         strTags: '',
         strYoutube: '',
@@ -74,6 +75,14 @@ function AddBiteForm() {
                 value={addMeal.strInstructions}
                 onChange={handleChange}
                 placeholder="Instructions/Recipe"
+                style={{ marginBottom: '10px', width: '100%' }}
+            />
+            <input
+                type="text"
+                name="mealPreparationTime"
+                value={addMeal.mealPreparationTime}
+                onChange={handleChange}
+                placeholder="Meal Preparation Time e.g. 30 minutes, 1 hour"
                 style={{ marginBottom: '10px', width: '100%' }}
             />
             <input

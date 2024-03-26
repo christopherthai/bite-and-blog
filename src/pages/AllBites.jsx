@@ -144,8 +144,6 @@ function AllBites() {
   // Sorts the filtered bites based on the specified sort order.
   const sortedBites = sortBites(filteredBites, sort);
 
-
-
   // Function to delete a bite in the database and update the state
   const deleteBite = (id) => {
     fetch(`http://localhost:4000/meals/${id}`, {
@@ -184,7 +182,10 @@ function AllBites() {
                 <p>{bite.mealPreparationTime}</p>
               </div>
               <div className="average-rating-icon-container">
-              <AverageRating rating={bite.rating} className="average-rating"/>
+                <AverageRating
+                  rating={bite.rating}
+                  className="average-rating"
+                />
               </div>
               <p>Category: {bite.strCategory}</p>
               <p>
