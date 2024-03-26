@@ -183,7 +183,7 @@ function AllBites() {
               </div>
               <div className="average-rating-icon-container">
                 <AverageRating
-                  rating={bite.rating}
+                  userFeedback={bite.userFeedback}
                   className="average-rating"
                 />
               </div>

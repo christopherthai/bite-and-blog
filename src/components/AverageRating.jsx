@@ -1,25 +1,28 @@
 import StarRatings from "react-star-ratings";
 import PropTypes from "prop-types";
 
-function AverageRating({ rating }) {
+function AverageRating({ userFeedback = [] }) {
+console.log("🚀 ~ AverageRating ~ userFeedback:", userFeedback)
   /*
-  Add PropTypes for the rating prop in the AverageRating component
-  The rating prop should be an array of objects with a rating property that is a number and is required
-  */
+   * The AverageRating component receives the userFeedback prop from the parent component.
+   * It calculates the average rating of the bite using the reduce method.
+   * The average rating is then displayed using the StarRatings component.
+   */
   AverageRating.propTypes = {
-    rating: PropTypes.arrayOf(
+    userFeedback: PropTypes.arrayOf(
       PropTypes.shape({
-        rating: PropTypes.number.isRequired,
+        name: PropTypes.string,
+        rating: PropTypes.number,
+        comment: PropTypes.string,
       })
     ),
   };
 
-  // Calculate the average rating of the bite using reduce method
-  const averageRating =
-    rating && rating.length > 0
-      ? rating.reduce((acc, curr) => acc + curr.rating, 0) / rating.length
-      : 0;
+  const averageRating = userFeedback.length > 0
+    ? userFeedback.reduce((acc, curr) => acc + curr.rating, 0) / userFeedback.length
+    : 0;
 
+  
   return (
     <StarRatings
       rating={averageRating}
