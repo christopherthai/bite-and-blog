@@ -4,8 +4,9 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import AllBites from "./pages/AllBites.jsx";
 import AddBite from "./pages/AddBite.jsx";
-import ShowcaseBite from "./pages/ShowcaseBite.jsx"
+import ShowcaseBite from "./pages/ShowcaseBite.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import FavoriteBites from "./pages/FavoriteBites.jsx";
 
 // Define the routes for the application
 const routes = [
@@ -16,9 +17,10 @@ const routes = [
       { path: "/", element: <Home /> }, // Render the Home component for the "/" path
       { path: "/about", element: <About /> },
       { path: "/addbite", element: <AddBite /> },
-      { path: "/allbites", element: <AllBites /> }, 
-      { path: "/showcasebite/:id", element: <ShowcaseBite />}, 
-      { path: "*", element: <ErrorPage /> } // Render the ErrorPage component for any other path
+      { path: "/allbites", element: <AllBites /> },
+      { path: "/favoritebites", element: <FavoriteBites /> },
+      { path: "/showcasebite/:id", element: <ShowcaseBite /> },
+      { path: "*", element: <ErrorPage /> }, // Render the ErrorPage component for any other path
     ],
   },
 ];

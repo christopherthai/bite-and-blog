@@ -388,7 +388,14 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-22",
       "isFavorited": true,
-      "rating": []
+      "rating": [
+        {
+          "rating": 5
+        },
+        {
+          "rating": 1
+        }
+      ]
     },
     {
       "id": "23aa",
@@ -493,7 +500,20 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-25",
       "isFavorited": true,
-      "rating": []
+      "rating": [
+        {
+          "rating": 5
+        },
+        {
+          "rating": 3
+        },
+        {
+          "rating": 2
+        },
+        {
+          "rating": 5
+        }
+      ]
     },
     {
       "id": "8ded",
