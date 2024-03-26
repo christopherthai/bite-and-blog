@@ -202,3 +202,23 @@ button:focus-visible {
     position: absolute;
     z-index: 2;
   }
+
+  .star-rating-container {
+    display: flex;
+    gap: 4px;
+    margin-top: -4px;
+    margin-left: auto; /* Move to the right */
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .average-rating-number {
+    font-size: 25px;
+    margin-top: -3px;
+  } */
+
+  .line {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 63%;
+  }

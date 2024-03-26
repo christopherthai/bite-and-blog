@@ -86,17 +86,23 @@ function ShowcaseBite() {
       </div>
       <div style={{ padding: "20px" }}>
         <h2>{bite.strMeal}</h2>
-        <h5>Category: {bite.strCategory}</h5>
-        <h5>Area of Origin: {bite.strArea}</h5>
-        <div style={{ width: "65%" }}>
-          <p>{bite.strInstructions}</p>
-          <StarRatings
+        <div className="star-rating-container">
+          {/* <div className="average-rating-number">
+          {averageRating}
+          </div> */}
+        <StarRatings
             rating={averageRating}
             starDimension="30px"
             starRatedColor="yellow"
             isSelectable={false}
             className="star-rating"
           />
+        </div>
+        <hr className="line"/>
+        <h5>Category: {bite.strCategory}</h5>
+        <h5>Area of Origin: {bite.strArea}</h5>
+        <div style={{ width: "65%" }}>
+          <p>{bite.strInstructions}</p>
         </div>
         <a href={bite.strYoutube}>Link to YouTube Video</a>
         <p>Date: {bite.date}</p>
