@@ -12,7 +12,7 @@ function Home() {
     <>
       <MainContent selectedMeal={selectedMeal} setSelectedMeal={setSelectedMeal}/>
       <RecentBitesList selectedMeal={selectedMeal} setSelectedMeal={setSelectedMeal}/>
-      <Bite selectedMeal={selectedMeal} setSelectedMeal={setSelectedMeal}/>
+      <Bite/>
     </>
   );
 }

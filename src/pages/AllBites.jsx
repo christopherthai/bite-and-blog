@@ -4,7 +4,9 @@ import CategoryFilter from "../components/CategoryFilter";
 import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
 import "../index.css";
-import { MdTimer } from 'react-icons/md'; 
+import { MdTimer } from "react-icons/md";
+import SortFilter from "../components/SortFilter";
+import AverageRating from "../components/AverageRating";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
@@ -24,7 +26,6 @@ function AllBites() {
             sortedMeals.map((meal) => ({
               ...meal,
               showFullDescription: false,
-              isFavorited: false,
             }))
           );
         } else {
@@ -46,12 +47,16 @@ function AllBites() {
   };
 
   // Function to toggle favorite status
-  const toggleFavorite = (id) => {
-    setBites((prevBites) =>
-      prevBites.map((bite) =>
-        bite.id === id ? { ...bite, isFavorited: !bite.isFavorited } : bite
-      )
+  function handleFavoriteBite(favoritedBite) {
+    const updatedBites = bites.map((bite) =>
+      bite.id === favoritedBite.id ? favoritedBite : bite
     );
+    setBites(updatedBites);
+  }
+
+  // Update the sort state
+  const handleSortChange = (e) => {
+    setSort(e.target.value);
   };
 
   // Update the selected category in the state
@@ -71,6 +76,75 @@ function AllBites() {
       (bite) =>
         selectedCategory === "All" || bite.strCategory === selectedCategory
     );
+
+  // Sort the bites based on the selected sort
+  const sortBites = (bites, sort) => {
+    switch (sort) {
+      case "Newest":
+        return bites.sort((a, b) => new Date(b.date) - new Date(a.date));
+      case "Oldest":
+        return bites.sort((a, b) => new Date(a.date) - new Date(b.date));
+      case "Alphabetically":
+        return bites.sort((a, b) => a.strMeal.localeCompare(b.strMeal));
+      case "Shortest Preparation Time":
+        return bites.sort((a, b) => {
+          let lowerCaseA = a.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let lowerCaseB = b.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let aTime;
+          let bTime;
+
+          if (lowerCaseA.includes("hour") && lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return aTime - bTime;
+          } else if (lowerCaseA.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return aTime - bTime;
+          } else if (lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return aTime - bTime;
+          } else {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return aTime - bTime;
+          }
+        });
+      case "Longest Preparation Time":
+        return bites.sort((a, b) => {
+          let lowerCaseA = a.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let lowerCaseB = b.mealPreparationTime.toLowerCase().replace("s", ""); // Remove the 's' from the end of the string and convert to lowercase
+          let aTime;
+          let bTime;
+
+          if (lowerCaseA.includes("hour") && lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return bTime - aTime;
+          } else if (lowerCaseA.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return bTime - aTime;
+          } else if (lowerCaseB.includes("hour")) {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]) * 60; // Convert the hour to minutes
+            return bTime - aTime;
+          } else {
+            aTime = parseInt(a.mealPreparationTime.split(" ")[0]);
+            bTime = parseInt(b.mealPreparationTime.split(" ")[0]);
+            return bTime - aTime;
+          }
+        });
+      default:
+        return bites;
+    }
+  };
+
+  // Sorts the filtered bites based on the specified sort order.
+  const sortedBites = sortBites(filteredBites, sort);
+
+
 
   // Function to delete a bite in the database and update the state
   const deleteBite = (id) => {
@@ -92,15 +166,15 @@ function AllBites() {
 
   return (
     <main className="bites-container">
-      <h1>All Bites</h1>
       <Search search={search} onHandleSearch={handleSearch} />
       <CategoryFilter
         bites={bites}
         selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
       />
+      <SortFilter bites={bites} sort={sort} onSortChange={handleSortChange} />
       <div className="meal-grid">
-        {filteredBites.map((bite) => (
+        {sortedBites.map((bite) => (
           <div key={bite.idMeal} className="meal">
             <img src={bite.strMealThumb} alt={bite.strMeal} />
             <div className="meal-details">
@@ -109,32 +183,37 @@ function AllBites() {
                 <MdTimer className="timer-icon" />
                 <p>{bite.mealPreparationTime}</p>
               </div>
+              <div className="average-rating-icon-container">
+              <AverageRating rating={bite.rating} className="average-rating"/>
+              </div>
               <p>Category: {bite.strCategory}</p>
               <p>
                 {bite.showFullDescription
                   ? bite.strInstructions
                   : `${bite.strInstructions.slice(0, 100)}...`}
               </p>
+              <div className="button-container">
+                {!bite.showFullDescription && (
+                  <button onClick={() => toggleDescription(bite.id)}>
+                    Quick View
+                  </button>
+                )}
+                {bite.showFullDescription && (
+                  <button onClick={() => toggleDescription(bite.id)}>
+                    Read less
+                  </button>
+                )}
 
-              {!bite.showFullDescription && (
-                <button onClick={() => toggleDescription(bite.id)}>
-                  Read more
+                <button className="delete" onClick={() => deleteBite(bite.id)}>
+                  Delete
                 </button>
-              )}
-              {bite.showFullDescription && (
-                <button onClick={() => toggleDescription(bite.id)}>
-                  Read less
-                </button>
-              )}
-
+              </div>
               <Favorite
+                id={bite.id}
                 isFavorited={bite.isFavorited}
-                toggleFavorite={() => toggleFavorite(bite.id)}
+                handleFavoriteBite={handleFavoriteBite}
               />
 
-              <button className="delete" onClick={() => deleteBite(bite.id)}>
-                Delete
-              </button>
               <p>Date: {bite.date}</p>
               <Link to={`/ShowcaseBite/${bite.id}`} element>
                 See Full Bite Page
