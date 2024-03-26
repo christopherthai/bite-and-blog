@@ -208,7 +208,7 @@ button:focus-visible {
     display: flex;
     gap: 4px;
     margin-top: -4px;
-    margin-left: auto; /* Move to the right */
+    margin-right: auto; /* Move to the right */
     position: relative;
     z-index: 2;
   }

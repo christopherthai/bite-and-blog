@@ -388,7 +388,62 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-22",
       "isFavorited": true,
-      "rating": []
+      "rating": [
+        {
+          "rating": 4
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 1
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 2
+        },
+        {
+          "rating": 1
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 1
+        },
+        {
+          "rating": 1
+        },
+        {
+          "rating": 2
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        }
+      ]
     },
     {
       "id": "23aa",
@@ -523,7 +578,64 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-12-22",
       "isFavorited": false,
-      "rating": []
+      "rating": [
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 4
+        },
+        {
+          "rating": 5
+        },
+        {
+          "rating": 4
+        }
+      ],
+      "userFeedback": [
+        {
+          "name": "tim",
+          "rating": [
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            },
+            {
+              "rating": 4
+            }
+          ],
+          "comment": "love this"
+        }
+      ]
     }
   ]
 }
