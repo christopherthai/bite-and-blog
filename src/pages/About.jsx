@@ -23,7 +23,7 @@ function About() {
   return (
     <>
       <main className="wrapper">
-        <h1> Why Bite and Blog? </h1>
+        <h1 className="headeronly"> Why Bite and Blog? </h1>
         <p className="about-text">
           You don't need your own food blog to be a food blogger! Cooking, by
           nature, is a social act. Sharing meals or recipes with loved ones is a
@@ -35,12 +35,14 @@ function About() {
         </p>
         <div className="image-container-about">
           {images.map((image, index) => (
+            <div key={index} className="image2wrapper">
             <img
               key={index}
               src={image}
               alt={`Image ${index}`}
               className={index === currentImageIndex ? "visible" : "hidden"}
             />
+            </div>
           ))}
         </div>
       </main>

@@ -28,7 +28,13 @@
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Brian",
+          "rating": 4,
+          "comment": "Delicious!"
+        }
+      ]
     },
     {
       "id": "e7b2",
@@ -268,7 +274,12 @@
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Sara",
+          "comment": "My favorite pasta dish ever"
+        }
+      ]
     },
     {
       "id": "aa5d",
