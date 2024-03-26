@@ -3,10 +3,10 @@ import Search from "../components/Search";
 import CategoryFilter from "../components/CategoryFilter";
 import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
+import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
 import { MdTimer } from "react-icons/md";
 import SortFilter from "../components/SortFilter";
-import AverageRating from "../components/AverageRating";
 
 function AllBites() {
   const [bites, setBites] = useState([]);
@@ -180,12 +180,6 @@ function AllBites() {
               <div className="timer-icon-container">
                 <MdTimer className="timer-icon" />
                 <p>{bite.mealPreparationTime}</p>
-              </div>
-              <div className="average-rating-icon-container">
-                <AverageRating
-                  userFeedback={bite.userFeedback}
-                  className="average-rating"
-                />
               </div>
               <p>Category: {bite.strCategory}</p>
               <p>
