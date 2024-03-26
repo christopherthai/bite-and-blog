@@ -193,3 +193,22 @@ button:focus-visible {
     bottom: 10px;
     right: 10px;
   }
+  .image-container-about {
+    position: relative;
+  }
+  
+  .image-container-about img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .image-container-about img.visible {
+    opacity: 1;
+  }
+  
+  .image-container-about img.hidden {
+    opacity: 0;
+  }
