@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; 
 import { Rating } from "react-simple-star-rating";
 
 function ShowcaseBite() {
@@ -7,13 +7,14 @@ function ShowcaseBite() {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const { id } = useParams();
+  const navigate = useNavigate(); // Use useNavigate to go back one page
 
   useEffect(() => {
     fetch(`http://localhost:4000/meals/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        setBite(data)
-        setRating(data.rating)
+        setBite(data);
+        setRating(data.rating);
       })
       .catch((error) => console.error("Error fetching bite", error));
   }, [id]);
@@ -21,6 +22,7 @@ function ShowcaseBite() {
   if (!bite) {
     return <div>Loading...</div>;
   }
+
   // Function to handle rating
   const handleRating = (rate) => {
     setRating(rate);
@@ -47,6 +49,11 @@ function ShowcaseBite() {
     padding: "20px",
     maxWidth: "1200px",
     margin: "auto",
+  };
+
+  // To handle navigation back to the previous page
+  const handleGoBack = () => {
+    navigate(-1); // Use navigate(-1) to go back
   };
 
   return (
@@ -80,7 +87,10 @@ function ShowcaseBite() {
               style={{ width: "500px", height: "100px" }}
             />
           </div>
-          <button>Submit</button>
+          <div className="button-container">
+            <button onClick={handleGoBack}>Back</button>
+            <button>Submit</button>
+          </div>
         </div>
       </div>
     </div>
