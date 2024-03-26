@@ -313,7 +313,18 @@
       "mealPreparationTime": "4 hours",
       "date": "2024-01-10",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "rating": 5,
+          "comment": "test"
+        },
+        {
+          "name": "test 2",
+          "rating": 1,
+          "comment": "test 2"
+        }
+      ]
     },
     {
       "id": "4332",

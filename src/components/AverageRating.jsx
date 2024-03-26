@@ -17,7 +17,8 @@ console.log("🚀 ~ AverageRating ~ userFeedback:", userFeedback)
       })
     ),
   };
-
+  
+  // Calculate the average rating of the bite using reduce method
   const averageRating = userFeedback.length > 0
     ? userFeedback.reduce((acc, curr) => acc + curr.rating, 0) / userFeedback.length
     : 0;
