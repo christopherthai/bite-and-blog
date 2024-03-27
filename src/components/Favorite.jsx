@@ -15,8 +15,6 @@ function Favorite({ id, isFavorited, handleFavoriteBite }) {
       .catch((error) => console.error("Error toggling favorite:", error));
   }
 
-  console.log("isFavorited", isFavorited);
-
   return (
     <button className="favorite-button" onClick={toggleFavorite}>
       {isFavorited ? "⭐" : "☆"}
