@@ -28,7 +28,7 @@ function AverageRating({ userFeedback = [] }) {
   return (
     <StarRatings
       rating={averageRating}
-      starDimension="13px"
+      starDimension="18px"
       starRatedColor="orange"
       isSelectable={false}
     />
