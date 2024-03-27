@@ -258,8 +258,15 @@
       "strYoutube": "https://www.youtube.com/watch?v=WFvj71RZYPc",
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-11",
-      "isFavorited": false,
-      "userFeedback": []
+      "isFavorited": true,
+      "userFeedback": [
+        {
+          "name": "Maria",
+          "date": "2024-03-27",
+          "rating": 5,
+          "comment": "this pouding is YUM"
+        }
+      ]
     },
     {
       "id": "8673",
@@ -413,14 +420,9 @@
       "isFavorited": true,
       "userFeedback": [
         {
-          "name": "test",
-          "rating": 1,
-          "comment": "test"
-        },
-        {
-          "name": "test 2",
-          "rating": 3,
-          "comment": "test 2"
+          "name": "Tom",
+          "rating": 5,
+          "comment": "i love blueberries"
         }
       ]
     },
@@ -528,16 +530,6 @@
       "date": "2024-03-25",
       "isFavorited": true,
       "userFeedback": [
-        {
-          "name": "test",
-          "rating": 5,
-          "comment": "test"
-        },
-        {
-          "name": "test",
-          "rating": 1,
-          "comment": "test"
-        },
         {
           "name": "Rita",
           "rating": 5,
