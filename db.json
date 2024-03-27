@@ -108,7 +108,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
       "mealPreparationTime": "3 hours",
       "date": "2024-02-29",
-      "isFavorited": false,
+      "isFavorited": true,
       "userFeedback": []
     },
     {
@@ -139,7 +139,20 @@
       "mealPreparationTime": "2 hours",
       "date": "2023-05-20",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "date": "2024-03-27",
+          "rating": 5,
+          "comment": "Test Comment"
+        },
+        {
+          "name": "Chris ",
+          "date": "2024-03-27",
+          "rating": 1,
+          "comment": "Test comment 2"
+        }
+      ]
     },
     {
       "id": "89f9",
@@ -281,7 +294,23 @@
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
+<<<<<<< HEAD
+      "userFeedback": [
+        {
+          "name": "test",
+          "rating": 5,
+          "comment": "test"
+        },
+        {
+          "name": "Kuk Hoon",
+          "date": "2024-03-27",
+          "rating": 5,
+          "comment": "nice!"
+        }
+      ]
+=======
       "userFeedback": []
+>>>>>>> b098e92a36c1415fcce1e2d5d2f159c0cbbb8ff4
     },
     {
       "id": "aa5d",

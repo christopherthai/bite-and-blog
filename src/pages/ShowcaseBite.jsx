@@ -138,7 +138,7 @@ function ShowcaseBite() {
             <StarRatings
               rating={averageRating}
               starDimension="30px"
-              starRatedColor="yellow"
+              starRatedColor="orange"
               isSelectable={false}
               className="star-rating"
             />
