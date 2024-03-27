@@ -294,23 +294,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
-<<<<<<< HEAD
-      "userFeedback": [
-        {
-          "name": "test",
-          "rating": 5,
-          "comment": "test"
-        },
-        {
-          "name": "Kuk Hoon",
-          "date": "2024-03-27",
-          "rating": 5,
-          "comment": "nice!"
-        }
-      ]
-=======
       "userFeedback": []
->>>>>>> b098e92a36c1415fcce1e2d5d2f159c0cbbb8ff4
     },
     {
       "id": "aa5d",
@@ -589,6 +573,21 @@
       "date": "2023-12-22",
       "isFavorited": false,
       "userFeedback": []
+    },
+    {
+      "id": "2d6e",
+      "strMeal": "test",
+      "strCategory": "test",
+      "strArea": "test",
+      "strInstructions": "test",
+      "mealPreparationTime": "test",
+      "strMealThumb": "test",
+      "strTags": "",
+      "strYoutube": "test",
+      "date": "2024-03-27",
+      "userFeedback": [
+      
+      ]
     }
   ]
 }
