@@ -281,13 +281,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
-      "userFeedback": [
-        {
-          "name": "test",
-          "rating": 5,
-          "comment": "test"
-        }
-      ]
+      "userFeedback": []
     },
     {
       "id": "aa5d",
