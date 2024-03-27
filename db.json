@@ -521,7 +521,20 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-10-22",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "date": "2024-03-27",
+          "rating": 5,
+          "comment": "It was really good"
+        },
+        {
+          "name": "John",
+          "date": "2024-03-27",
+          "rating": 3,
+          "comment": "It was okay"
+        }
+      ]
     },
     {
       "id": "df7a",
