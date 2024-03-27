@@ -46,7 +46,7 @@ function ShowcaseBite() {
   const handleClick = (e) => {
     e.preventDefault();
     const today = new Date();
-    const date = today.toISOString().split('T')[0];
+    const date = today.toISOString().split("T")[0];
     const newFeedback = { name, date, rating: rating || "", comment };
     const updatedFeedback = [...(feedback || []), newFeedback];
 
@@ -70,10 +70,10 @@ function ShowcaseBite() {
 
   // Calculate the average rating of the bite using reduce method
   const averageRating =
-  bite && bite.userFeedback && bite.userFeedback.length > 0
-    ? bite.userFeedback.reduce((acc, curr) => acc + curr.rating, 0) /
-      bite.userFeedback.length
-    : 0;
+    bite && bite.userFeedback && bite.userFeedback.length > 0
+      ? bite.userFeedback.reduce((acc, curr) => acc + curr.rating, 0) /
+        bite.userFeedback.length
+      : 0;
 
   const centerStyle = {
     display: "flex",
@@ -94,7 +94,7 @@ function ShowcaseBite() {
     height: "auto",
     padding: "10px",
     flex: "1 1 200px",
-    marginBottom: '0',
+    marginBottom: "0",
   };
 
   const contentStyle = {
@@ -175,15 +175,10 @@ function ShowcaseBite() {
                 <button onClick={handleGoBack}>Back</button>
                 <button onClick={handleClick}>Submit</button>
               </div>
-              
             </div>
-            
           </div>
-          
         </div>
-        
       </div>
-      
     </div>
   );
 }

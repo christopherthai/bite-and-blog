@@ -31,17 +31,18 @@ function About() {
           share our favorite dishes, recipes or tips with each other - what made
           those biscuits so fluffy? We need to know! Feel free to share your
           dishes from your favorite restaurant, recipes from your kitchen at
-          home and beyond.  <strong>Life is cheddar when shared with you!</strong>
+          home and beyond.{" "}
+          <strong>Life is cheddar when shared with you!</strong>
         </p>
         <div className="image-container-about">
           {images.map((image, index) => (
             <div key={index} className="image2wrapper">
-            <img
-              key={index}
-              src={image}
-              alt={`Image ${index}`}
-              className={index === currentImageIndex ? "visible" : "hidden"}
-            />
+              <img
+                key={index}
+                src={image}
+                alt={`Image ${index}`}
+                className={index === currentImageIndex ? "visible" : "hidden"}
+              />
             </div>
           ))}
         </div>
