@@ -18,9 +18,11 @@ Bite and Blog is an interactive public food blogging app where users can create 
 
 4. Users can view all blog posts on the “All Bites” page
 
-5. User can view a "quick view" of the blog post by clicking "quick view" and close that by clicking "read less"
+5. Users can view a "quick view" of the blog post by clicking "quick view" and close that by clicking "read less"
 
-6. User can view full post by clicking "See Full Bite Page" on the "All Bites" page
+6. Users can view full post by clicking "See Full Bite Page" on the "All Bites" page
+
+7. Users can search for specific post using a search feature
 
 ## CRUD API Routes
 
@@ -51,9 +53,13 @@ API EndPoints (Using to create db.json file):
 
 4. Users can delete a blog on the page
 
-5. User can leave a rating & comment on All Bites page after clicking See Full Bite Page
+5. Users can leave a rating & comment on All Bites page after clicking See Full Bite Page
 
-6. User can view comments & ratings left by other users
+6. Users can view comments & ratings left by other users
+
+7. Users can sort the posts by meal categories
+
+8. Users can sort the posts by newest, oldest, alphabetically, shortest preparation time, longest preparation time
 
 ## Trello Board
 
