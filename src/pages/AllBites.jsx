@@ -3,6 +3,7 @@ import Search from "../components/Search";
 import CategoryFilter from "../components/CategoryFilter";
 import { Link } from "react-router-dom";
 import Favorite from "../components/Favorite";
+import ShowcaseBite from "./ShowcaseBite";
 import "../index.css";
 import { MdTimer } from "react-icons/md";
 import SortFilter from "../components/SortFilter";
@@ -183,7 +184,7 @@ function AllBites() {
               </div>
               <div className="average-rating-icon-container">
                 <AverageRating
-                  rating={bite.rating}
+                  userFeedback={bite.userFeedback}
                   className="average-rating"
                 />
               </div>

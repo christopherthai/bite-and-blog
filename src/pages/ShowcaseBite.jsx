@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
 import StarRatings from "react-star-ratings";
-import MealFeedback from '../components/MealFeedback'
+import MealFeedback from "../components/MealFeedback";
 
 function ShowcaseBite() {
-  
   const [bite, setBite] = useState([]);
-  const [rating, setRating] = useState([]); // Use rating state to store the rating value
-  const [name, setName] = useState('');
+  const [rating, setRating] = useState(""); // Use rating state to store the rating value
+  const [name, setName] = useState("");
   const [comment, setComment] = useState("");
-  const [feedback, setFeedback] = useState(bite.userFeedback || [])
+  const [feedback, setFeedback] = useState({});
   const { id } = useParams();
   const navigate = useNavigate(); // Use useNavigate to go back one page
 
@@ -21,6 +20,7 @@ function ShowcaseBite() {
       .then((data) => {
         setBite(data);
         setRating(data.rating);
+        setFeedback(data.userFeedback);
       })
       .catch((error) => console.error("Error fetching bite", error));
   }, [id]);
@@ -35,130 +35,107 @@ function ShowcaseBite() {
    */
   const handleRating = (rate) => {
     setRating(rate);
-
-    // Create a new rating array with the new rating value
-    const newRating = [
-      ...(bite.rating || []), // Provide a default value
-      {
-        rating: rate,
-      },
-    ];
-
-    // Submit the new rating to the server using PUT method that replaces the existing rating array with the new rating array
-    fetch(`http://localhost:4000/meals/${id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        ...bite,
-        rating: newRating,
-      }),
-    })
-      .then((response) => response.json())
-      .then((updatedBite) => {
-        setBite(updatedBite);
-        setRating(0);
-      })
-      .catch((error) => console.error("Error submitting rating", error));
   };
 
-    
   // To handle navigation back to the previous page
   const handleGoBack = () => {
     navigate(-1); // Use navigate(-1) to go back
   };
 
-  // Calculate the average rating of the bite using reduce method
-  const averageRating =
-    bite.rating && bite.rating.length > 0
-      ? bite.rating.reduce((acc, curr) => acc + curr.rating, 0) /
-        bite.rating.length
-      : 0;
-
   //Handles click of submit button for user feedback.
   const handleClick = (e) => {
     e.preventDefault();
-    const newFeedback = {name, rating, comment} ;
-    const updatedFeedback = [...feedback || [], newFeedback];
+    const today = new Date();
+    const date = today.toISOString().split("T")[0];
+    const newFeedback = { name, date, rating: rating || "", comment };
+    const updatedFeedback = [...(feedback || []), newFeedback];
 
     fetch(`http://localhost:4000/meals/${id}`, {
-        method:'PATCH',
-        headers: {
-            'Content-Type': 'application/json',                
-        },
-        body: JSON.stringify({userFeedback: updatedFeedback})
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userFeedback: updatedFeedback }),
     })
-        .then((res) =>res.json())
-        .then(() =>{
-            setFeedback(updatedFeedback);
-            setName('');
-            setComment('');
-            setRating(5);
-        })
-        .catch((error)=> console.error("Error submitting feedback:", error));
+      .then((res) => res.json())
+      .then((data) => {
+        setFeedback(updatedFeedback);
+        setBite(data);
+        setName("");
+        setRating("");
+        setComment("");
+      })
+      .catch((error) => console.error("Error submitting feedback:", error));
   };
 
-      const centerStyle = {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "flex-start",
-        justifyContent: "center",
-        textAlign: "left",
-        minHeight: "100vh",
-        padding: "20px",
-        gap: "20px",
-        maxWidth: "1600px",
-        margin: "auto",
-      };
+  // Calculate the average rating of the bite using reduce method
+  const averageRating =
+    bite && bite.userFeedback && bite.userFeedback.length > 0
+      ? bite.userFeedback.reduce((acc, curr) => acc + curr.rating, 0) /
+        bite.userFeedback.length
+      : 0;
 
-      const imageStyle = {
-        maxWidth: "800px",
-        width: "100%",
-        height: "auto",
-        padding: "20px",
-        flex: "1 1 200px",
-      };
+  const centerStyle = {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "center",
+    textAlign: "left",
+    minHeight: "100vh",
+    padding: "10px",
+    gap: "10px",
+    maxWidth: "1600px",
+    marginBottom: "0",
+  };
 
-      const contentStyle = {
-        padding: "20px",
-        flex: "3 1 800px",        
-        display: "flex",
-        flexDirection: "column",
-        };
+  const imageStyle = {
+    maxWidth: "800px",
+    width: "100%",
+    height: "auto",
+    padding: "10px",
+    flex: "1 1 200px",
+    marginBottom: "0",
+  };
 
-      const instructionsStyle = {
-        maxWidth: "125%",
-        marginBottom: "20px",
-      };
+  const contentStyle = {
+    padding: "20px",
+    flex: "3 1 800px",
+    display: "flex",
+    flexDirection: "column",
+  };
 
-      const textAreaStyle = {
-        display: "flex",
-        flexDirection: "column",
-        width: "500px",
-      };
+  const instructionsStyle = {
+    maxWidth: "125%",
+    marginBottom: "20px",
+  };
 
-      const buttonStyle = {
-        display: "flex",
-        justifyContent: "space-between",
-        width: "500px"
-      }
+  const textAreaStyle = {
+    display: "flex",
+    flexDirection: "column",
+    width: "500px",
+  };
+
+  const buttonStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    width: "500px",
+  };
 
   return (
-    <div style ={{maxWidth:"1600px", margin: "auto"}}>
+    <div style={{ maxWidth: "1600px", margin: "auto" }}>
       <div style={centerStyle}>
-        <div style = {imageStyle}>
+        <div style={imageStyle}>
           <img
             src={bite.strMealThumb}
             alt={bite.strMeal}
             style={{ maxWidth: "800px", height: "auto", padding: "20px" }}
           />
+          <MealFeedback feedback={feedback} />
         </div>
         <div style={contentStyle}>
           <h2>{bite.strMeal}</h2>
           <div className="star-rating-container">
-            {/* <div className="average-rating-number">
-            {averageRating}
-            </div> */}
-          <StarRatings
+            <StarRatings
               rating={averageRating}
               starDimension="30px"
               starRatedColor="yellow"
@@ -166,23 +143,22 @@ function ShowcaseBite() {
               className="star-rating"
             />
           </div>
-          <hr className="line"/>
+          <hr className="line" />
           <h5>Category: {bite.strCategory}</h5>
           <h5>Area of Origin: {bite.strArea}</h5>
           <div style={instructionsStyle}>
             <p>{bite.strInstructions}</p>
           </div>
           <div>
-
-          <a href={bite.strYoutube}>Link to YouTube Video</a>
-          <p>Date: {bite.date}</p>
-          {/* Comments and Rating container */}
-          <div style = {textAreaStyle}>
+            <a href={bite.strYoutube}>Link to YouTube Video</a>
+            <p>Date: {bite.date}</p>
+            {/* Comments and Rating container */}
+            <div style={textAreaStyle}>
               <div>
                 <Rating initialValue={rating} onClick={handleRating} />
               </div>
               <div>
-              <textarea
+                <textarea
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Posters Name"
@@ -195,17 +171,14 @@ function ShowcaseBite() {
                   style={{ width: "500px", height: "100px" }}
                 />
               </div>
-              <div style = {buttonStyle} className="button-container">
+              <div style={buttonStyle} className="button-container">
                 <button onClick={handleGoBack}>Back</button>
-                <button onClick = {handleClick}>Submit</button>
+                <button onClick={handleClick}>Submit</button>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        <MealFeedback 
-          feedback = {feedback}
-          />
+      </div>
     </div>
   );
 }

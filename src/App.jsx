@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Header from './components/Header.jsx';
-import './index.css'
+import Header from "./components/Header.jsx";
+import "./index.css";
 
 function App() {
   return (
@@ -10,6 +10,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

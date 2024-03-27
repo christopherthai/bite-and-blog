@@ -12,8 +12,8 @@
       "id": "320a",
       "mealPreparationTime": "30 minutes",
       "date": "2023-07-31",
-      "isFavorited": false,
-      "rating": []
+      "isFavorited": true,
+      "userFeedback": []
     },
     {
       "id": "75fd",
@@ -27,8 +27,14 @@
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
-      "isFavorited": true,
-      "rating": []
+      "isFavorited": false,
+      "userFeedback": [
+        {
+          "name": "Brian",
+          "rating": 4,
+          "comment": "Delicious!"
+        }
+      ]
     },
     {
       "id": "e7b2",
@@ -43,7 +49,7 @@
       "mealPreparationTime": "50 minutes",
       "date": "2023-12-15",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "c626",
@@ -58,7 +64,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-10-21",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "6c21",
@@ -73,7 +79,7 @@
       "mealPreparationTime": "35 minutes",
       "date": "2023-08-06",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "e59b",
@@ -88,7 +94,7 @@
       "mealPreparationTime": "50 minutes",
       "date": "2023-11-30",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "f195",
@@ -103,7 +109,7 @@
       "mealPreparationTime": "3 hours",
       "date": "2024-02-29",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "6399",
@@ -118,7 +124,7 @@
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-01",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "c6ed",
@@ -133,7 +139,7 @@
       "mealPreparationTime": "2 hours",
       "date": "2023-05-20",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "89f9",
@@ -148,7 +154,7 @@
       "mealPreparationTime": "50 minutes",
       "date": "2022-09-13",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "0f7c",
@@ -163,7 +169,7 @@
       "mealPreparationTime": "2 hours",
       "date": "2022-04-14",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "95d4",
@@ -178,7 +184,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-02-21",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "c90e",
@@ -193,7 +199,7 @@
       "mealPreparationTime": "45 minutes",
       "date": "2022-02-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "97c7",
@@ -208,7 +214,7 @@
       "mealPreparationTime": "5 hours",
       "date": "2022-05-03",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "653d",
@@ -223,7 +229,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2023-06-14",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "7c10",
@@ -238,7 +244,7 @@
       "mealPreparationTime": "1 hours",
       "date": "2023-07-21",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "d572",
@@ -253,7 +259,7 @@
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-11",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "8673",
@@ -261,14 +267,20 @@
       "strMeal": "Spaghetti alla Carbonara",
       "strCategory": "Pasta",
       "strArea": "Italian",
-      "strInstructions": "STEP 1\r\nPut a large saucepan of water on to boil.\r\n\r\nSTEP 2\r\nFinely chop the 100g pancetta, having first removed any rind. Finely grate 50g pecorino cheese and 50g parmesan and mix them together.\r\n\r\nSTEP 3\r\nBeat the 3 large eggs in a medium bowl and season with a little freshly grated black pepper. Set everything aside.\r\n\r\nSTEP 4\r\nAdd 1 tsp salt to the boiling water, add 350g spaghetti and when the water comes back to the boil, cook at a constant simmer, covered, for 10 minutes or until al dente (just cooked).\r\n\r\nSTEP 5\r\nSquash 2 peeled plump garlic cloves with the blade of a knife, just to bruise it.\r\n\r\nSTEP 6\r\nWhile the spaghetti is cooking, fry the pancetta with the garlic. Drop 50g unsalted butter into a large frying pan or wok and, as soon as the butter has melted, tip in the pancetta and garlic.\r\n\r\nSTEP 7\r\nLeave to cook on a medium heat for about 5 minutes, stirring often, until the pancetta is golden and crisp. The garlic has now imparted its flavour, so take it out with a slotted spoon and discard.\r\n\r\nSTEP 8\r\nKeep the heat under the pancetta on low. When the pasta is ready, lift it from the water with a pasta fork or tongs and put it in the frying pan with the pancetta. Don’t worry if a little water drops in the pan as well (you want this to happen) and don’t throw the pasta water away yet.\r\n\r\nSTEP 9\r\nMix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later.\r\n\r\nSTEP 10\r\nTake the pan of spaghetti and pancetta off the heat. Now quickly pour in the eggs and cheese. Using the tongs or a long fork, lift up the spaghetti so it mixes easily with the egg mixture, which thickens but doesn’t scramble, and everything is coated.\r\n\r\nSTEP 11\r\nAdd extra pasta cooking water to keep it saucy (several tablespoons should do it). You don’t want it wet, just moist. Season with a little salt, if needed.\r\n\r\nSTEP 12\r\nUse a long-pronged fork to twist the pasta on to the serving plate or bowl. Serve immediately with a little sprinkling of the remaining cheese and a grating of black pepper. If the dish does get a little dry before serving, splash in some more hot pasta water and the glossy sauciness will be revived.",
+      "strInstructions": "STEP 1\r\nPut a large saucepan of water on to boil.\r\n\r\nSTEP 2\r\nFinely chop the 100g pancetta, having first removed any rind. Finely grate 50g pecorino cheese and 50g parmesan and mix them together.\r\n\r\nSTEP 3\r\nBeat the 3 large eggs in a medium bowl and season with a little freshly grated black pepper. Set everything aside.\r\n\r\nSTEP 4\r\nAdd 1 tsp salt to the boiling water, add 350g spaghetti and when the water comes back to the boil, cook at a constant simmer, covered, for 10 minutes or until al dente (just cooked).\r\n\r\nSTEP 5\r\nSquash 2 peeled plump garlic cloves with the blade of a knife, just to bruise it.\r\n\r\nSTEP 6\r\nWhile the spaghetti is cooking, fry the pancetta with the garlic. Drop 50g unsalted butter into a large frying pan or wok and, as soon as the butter has melted, tip in the pancetta and garlic.\r\n\r\nSTEP 7\r\nLeave to cook on a medium heat for about 5 minutes, stirring often, until the pancetta is golden and crisp. The garlic has now imparted its flavour, so take it out with a slotted spoon and discard.\r\n\r\nSTEP 8\r\nKeep the heat under the pancetta on low. When the pasta is ready, lift it from the water with a pasta fork or tongs and put it in the frying pan with the pancetta. Don’t worry if a little water drops in the pan as well (you want this to happen) and don’t throw the pasta water away yet.\r\n\r\nSTEP 9\r\nMix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later.\r\n\r\nSTEP 10\r\nTake the pan of spaghetti and pancetta off the heat. Now quickly pour in the eggs and cheese. Using the tongs or a long fork, lift up the spaghetti so it mixes easily with the egg mixture, which thickens but doesn’t scramble, and everything is coated.\r\n\r\nSTEP 11\r\nAdd extra pasta cooking water to keep it saucy (several tablespoons should do it). You don’t want it wet, just moist. Season with a little salt, if needed.\r\n\r\nSTEP 12\r\nUse a long-pronged fork to twist the pasta on to the serving plate or bowl. Serve immediately with a little sprinkling of the remaining cheese and a guse of black pepper. If the dish does get a little dry before serving, splash in some more hot pasta water and the glossy sauciness will be revived.",
       "strMealThumb": "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg",
       "strTags": "Pasta,BBQ,Breakfast",
       "strYoutube": "https://www.youtube.com/watch?v=_T6jkRvhlkk",
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
-      "rating": []
+      "userFeedback": [
+        {
+          "name": "test",
+          "rating": 5,
+          "comment": "test"
+        }
+      ]
     },
     {
       "id": "aa5d",
@@ -283,7 +295,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2023-01-25",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "2207",
@@ -298,7 +310,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2023-10-21",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "7297",
@@ -313,7 +325,18 @@
       "mealPreparationTime": "4 hours",
       "date": "2024-01-10",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "rating": 5,
+          "comment": "test"
+        },
+        {
+          "name": "test 2",
+          "rating": 1,
+          "comment": "test 2"
+        }
+      ]
     },
     {
       "id": "4332",
@@ -328,7 +351,7 @@
       "mealPreparationTime": "45 minutes",
       "date": "2023-12-16",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "8135",
@@ -343,7 +366,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2021-12-26",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "386e",
@@ -358,7 +381,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2022-01-29",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "8acc",
@@ -373,7 +396,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-10-25",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "a349",
@@ -387,13 +410,17 @@
       "strYoutube": "https://www.youtube.com/watch?v=SNeO28BCpsc",
       "mealPreparationTime": "1 hour",
       "date": "2024-03-22",
-      "isFavorited": false,
-      "rating": [
+      "isFavorited": true,
+      "userFeedback": [
         {
-          "rating": 5
+          "name": "test",
+          "rating": 1,
+          "comment": "test"
         },
         {
-          "rating": 1
+          "name": "test 2",
+          "rating": 3,
+          "comment": "test 2"
         }
       ]
     },
@@ -410,7 +437,7 @@
       "mealPreparationTime": "2 hours",
       "date": "2023-04-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "2dc0",
@@ -425,7 +452,7 @@
       "mealPreparationTime": "30 minutes",
       "date": "2023-09-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "6886",
@@ -440,7 +467,7 @@
       "mealPreparationTime": "2 hours",
       "date": "2022-03-13",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "308e",
@@ -455,7 +482,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2022-03-12",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "8f7d",
@@ -470,7 +497,7 @@
       "mealPreparationTime": "3 hours",
       "date": "2023-01-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "160a",
@@ -485,7 +512,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-10-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "df7a",
@@ -500,18 +527,21 @@
       "mealPreparationTime": "1 hour",
       "date": "2024-03-25",
       "isFavorited": true,
-      "rating": [
+      "userFeedback": [
         {
-          "rating": 5
+          "name": "test",
+          "rating": 5,
+          "comment": "test"
         },
         {
-          "rating": 3
+          "name": "test",
+          "rating": 1,
+          "comment": "test"
         },
         {
-          "rating": 2
-        },
-        {
-          "rating": 5
+          "name": "Rita",
+          "rating": 5,
+          "comment": "YUM"
         }
       ]
     },
@@ -528,7 +558,7 @@
       "mealPreparationTime": "3 hours",
       "date": "2023-04-22",
       "isFavorited": false,
-      "rating": []
+      "userFeedback": []
     },
     {
       "id": "e304",
@@ -543,64 +573,7 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-12-22",
       "isFavorited": false,
-      "rating": [
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 4
-        },
-        {
-          "rating": 5
-        },
-        {
-          "rating": 4
-        }
-      ],
-      "userFeedback": [
-        {
-          "name": "tim",
-          "rating": [
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            },
-            {
-              "rating": 4
-            }
-          ],
-          "comment": "love this"
-        }
-      ]
+      "userFeedback": []
     }
   ]
 }

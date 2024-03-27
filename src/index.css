@@ -1,10 +1,10 @@
 :root {
  
-  font-family: Inter, system-ui, font1, sans-serif;
+  font-family: Roboto;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   --clr-text: rgb(9, 5, 4);
@@ -23,9 +23,10 @@
   src: url(./FiftiesMovies.ttf)
 }
 @font-face {
-  font-family: muffaroo;
-  src: url(./Muffaroo.ttf)
+  font-family: Roboto;
+  src: url(./RobotoCondensedVariableFontwght.ttf)
 }
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -38,9 +39,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  
+  font-family: Roboto;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Roboto;
 }
 img {
   max-width: 100%;
@@ -51,11 +53,19 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   text-wrap: balance;
+  font-family: FiftiesMovies;
 }
-
+h2, h5 {
+  font-family: Roboto;
+}
+p {
+font-family: Roboto;
+}
 header {
   font-family: FiftiesMovies;
-  
+}
+.recent {
+  font-family: Roboto;
 }
 button {
   border-radius: 8px;
@@ -63,11 +73,13 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: Helvetica;
-  background-color: rgb(57, 209, 178)1a;
+  font-family: Roboto;
+  background-color: rgb(65, 212, 182);
   cursor: pointer;
   transition: border-color 0.25s;
+  color: white; 
 }
+
 button:hover {
   border-color: #646cff;
 }
@@ -96,8 +108,9 @@ button:focus-visible {
 
 .about-text {
   color: rgb(0, 0, 0); 
-  font-size: 18px; 
-  line-height: 1.7;}
+  font-size: 20.5px; 
+  line-height: 1.7;
+  font-family: Roboto;}
 
   .bites-container {
     padding: 20px;
@@ -124,6 +137,7 @@ button:focus-visible {
   .meal-details {
     padding: 10px;
     position: relative;
+    font-family: Roboto;
   }
   
   .meal-details h2 {
@@ -213,6 +227,17 @@ button:focus-visible {
   .image-container-about img.hidden {
     opacity: 0;
   }
+  .image2wrapper {
+    width: 500px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow to ensure consistency */
+  }
+  
+  .image2wrapper img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ensure the entire image is visible */
+  }
 
   .average-rating-icon-container {
     display: flex;
@@ -232,13 +257,9 @@ button:focus-visible {
     z-index: 2;
   }
 
-  /* .average-rating-number {
-    font-size: 25px;
-    margin-top: -3px;
-  } */
-
   .line {
     border-bottom: 1px solid #ccc;
     margin: 10px 0;
     width: 63%;
   }
+ 
