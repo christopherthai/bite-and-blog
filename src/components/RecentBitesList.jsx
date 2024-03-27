@@ -43,7 +43,7 @@ function RecentBitesList({ selectedMeal }) {
           height: "210px",
           bottom: "640px",
           left: "1020px",
-          fontSize: "75pt",
+          fontSize: "70pt",
           borderRadius: "0px",
           justifyContent: "center",
           textAlign: "center",
