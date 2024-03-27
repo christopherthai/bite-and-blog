@@ -108,7 +108,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=aQJAU2iJ730",
       "mealPreparationTime": "3 hours",
       "date": "2024-02-29",
-      "isFavorited": false,
+      "isFavorited": true,
       "userFeedback": []
     },
     {
@@ -139,7 +139,20 @@
       "mealPreparationTime": "2 hours",
       "date": "2023-05-20",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "date": "2024-03-27",
+          "rating": 5,
+          "comment": "Test Comment"
+        },
+        {
+          "name": "Chris ",
+          "date": "2024-03-27",
+          "rating": 1,
+          "comment": "Test comment 2"
+        }
+      ]
     },
     {
       "id": "89f9",
