@@ -573,21 +573,6 @@
       "date": "2023-12-22",
       "isFavorited": false,
       "userFeedback": []
-    },
-    {
-      "id": "2d6e",
-      "strMeal": "test",
-      "strCategory": "test",
-      "strArea": "test",
-      "strInstructions": "test",
-      "mealPreparationTime": "test",
-      "strMealThumb": "test",
-      "strTags": "",
-      "strYoutube": "test",
-      "date": "2024-03-27",
-      "userFeedback": [
-      
-      ]
     }
   ]
 }
