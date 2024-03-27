@@ -51,8 +51,8 @@ function AddBiteForm() {
                 name="strMeal"
                 value={addMeal.strMeal}
                 onChange={handleChange}
-                placeholder="Meal Name"
-                style={{ marginBottom: '10px', width: '100%' }}
+                placeholder="Bite Name"
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -60,7 +60,7 @@ function AddBiteForm() {
                 value={addMeal.strCategory}
                 onChange={handleChange}
                 placeholder="Category e.g. Pasta, Seafood, Dessert"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -68,14 +68,14 @@ function AddBiteForm() {
                 value={addMeal.strArea}
                 onChange={handleChange}
                 placeholder="Area of Origin"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <textarea
                 name="strInstructions"
                 value={addMeal.strInstructions}
                 onChange={handleChange}
                 placeholder="Instructions/Recipe"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -83,7 +83,7 @@ function AddBiteForm() {
                 value={addMeal.mealPreparationTime}
                 onChange={handleChange}
                 placeholder="Meal Preparation Time e.g. 30 minutes, 1 hour"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -91,7 +91,7 @@ function AddBiteForm() {
                 value={addMeal.strMealThumb}
                 onChange={handleChange}
                 placeholder="Meal Picture URL"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -99,7 +99,7 @@ function AddBiteForm() {
                 value={addMeal.strTags}
                 onChange={handleChange}
                 placeholder="Tags"
-                style={{ marginBottom: '10px', width: '100%' }}
+                style={{ marginBottom: '10px', width: '100%', fontFamily: 'Roboto' }}
             />
             <input
                 type="text"
@@ -107,9 +107,9 @@ function AddBiteForm() {
                 value={addMeal.strYoutube}
                 onChange={handleChange}
                 placeholder="YouTube URL"
-                style={{ marginBottom: '5px', width: '100%' }}
+                style={{ marginBottom: '5px', width: '100%', fontFamily: 'Roboto' }}
             />
-            <button type="submit" onSubmit = {handleSubmit} style={{ marginTop: '5px' }}>Submit Meal</button>
+            <button type="submit" onSubmit = {handleSubmit} style={{ marginTop: '5px' }}>Submit Bite!</button>
             </form>
         </div>
     
