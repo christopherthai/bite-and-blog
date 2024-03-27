@@ -47,7 +47,7 @@ function ShowcaseBite() {
     e.preventDefault();
     const today = new Date();
     const date = today.toISOString().split("T")[0];
-    const newFeedback = { name, date, rating: rating || "", comment };
+    const newFeedback = { name, date, rating: rating || 0, comment };
     const updatedFeedback = [...(feedback || []), newFeedback];
 
     fetch(`http://localhost:4000/meals/${id}`, {
