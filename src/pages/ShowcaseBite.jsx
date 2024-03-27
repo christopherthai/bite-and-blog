@@ -6,10 +6,10 @@ import MealFeedback from "../components/MealFeedback";
 
 function ShowcaseBite() {
   const [bite, setBite] = useState([]);
-  const [rating, setRating] = useState([]); // Use rating state to store the rating value
+  const [rating, setRating] = useState(""); // Use rating state to store the rating value
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
-  const [feedback, setFeedback] = useState([]);
+  const [feedback, setFeedback] = useState({});
   const { id } = useParams();
   const navigate = useNavigate(); // Use useNavigate to go back one page
 
@@ -45,7 +45,9 @@ function ShowcaseBite() {
   //Handles click of submit button for user feedback.
   const handleClick = (e) => {
     e.preventDefault();
-    const newFeedback = { name, rating: rating || "", comment };
+    const today = new Date();
+    const date = today.toISOString().split('T')[0];
+    const newFeedback = { name, date, rating: rating || "", comment };
     const updatedFeedback = [...(feedback || []), newFeedback];
 
     fetch(`http://localhost:4000/meals/${id}`, {
@@ -80,18 +82,19 @@ function ShowcaseBite() {
     justifyContent: "center",
     textAlign: "left",
     minHeight: "100vh",
-    padding: "20px",
-    gap: "20px",
+    padding: "10px",
+    gap: "10px",
     maxWidth: "1600px",
-    margin: "auto",
+    marginBottom: "0",
   };
 
   const imageStyle = {
     maxWidth: "800px",
     width: "100%",
     height: "auto",
-    padding: "20px",
+    padding: "10px",
     flex: "1 1 200px",
+    marginBottom: '0',
   };
 
   const contentStyle = {
@@ -127,6 +130,7 @@ function ShowcaseBite() {
             alt={bite.strMeal}
             style={{ maxWidth: "800px", height: "auto", padding: "20px" }}
           />
+          <MealFeedback feedback={feedback} />
         </div>
         <div style={contentStyle}>
           <h2>{bite.strMeal}</h2>
@@ -171,11 +175,15 @@ function ShowcaseBite() {
                 <button onClick={handleGoBack}>Back</button>
                 <button onClick={handleClick}>Submit</button>
               </div>
+              
             </div>
+            
           </div>
+          
         </div>
+        
       </div>
-      <MealFeedback feedback={feedback} />
+      
     </div>
   );
 }
