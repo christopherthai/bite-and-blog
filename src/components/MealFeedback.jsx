@@ -36,7 +36,7 @@ function MealFeedback({ feedback = [] }) {
                 <StarRatings
                   rating={fb.rating}
                   starDimension="30px"
-                  starRatedColor="yellow"
+                  starRatedColor="orange"
                   isSelectable={false}
                   className="star-rating"
                 />

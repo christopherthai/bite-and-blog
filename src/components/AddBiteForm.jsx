@@ -106,14 +106,6 @@ function AddBiteForm() {
         />
         <input
           type="text"
-          name="strTags"
-          value={addMeal.strTags}
-          onChange={handleChange}
-          placeholder="Tags"
-          style={{ marginBottom: "10px", width: "100%", fontFamily: "Roboto" }}
-        />
-        <input
-          type="text"
           name="strYoutube"
           value={addMeal.strYoutube}
           onChange={handleChange}

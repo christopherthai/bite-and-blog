@@ -8,7 +8,7 @@ function Home() {
   const [selectedMeal, setSelectedMeal] = useState(null);
 
   return (
-    <div>
+    <div style={{ maxHeight: "125vh", overflow: "hidden" }}>
       <MainContent
         selectedMeal={selectedMeal}
         setSelectedMeal={setSelectedMeal}
