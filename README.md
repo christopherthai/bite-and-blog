@@ -22,8 +22,6 @@ Bite and Blog is an interactive public food blogging app where users can create 
 
 6. Users can view full post by clicking "See Full Bite Page" on the "All Bites" page
 
-7. Users can search for specific post using a search feature
-
 ## CRUD API Routes
 
 API EndPoints (Using to create db.json file):
