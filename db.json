@@ -12,7 +12,7 @@
       "id": "320a",
       "mealPreparationTime": "30 minutes",
       "date": "2023-07-31",
-      "isFavorited": true,
+      "isFavorited": false,
       "userFeedback": []
     },
     {
@@ -27,7 +27,7 @@
       "strYoutube": "https://www.youtube.com/watch?v=jRfyNQs5qhU",
       "mealPreparationTime": "45 minutes",
       "date": "2024-01-19",
-      "isFavorited": false,
+      "isFavorited": true,
       "userFeedback": [
         {
           "name": "Brian",
@@ -49,7 +49,14 @@
       "mealPreparationTime": "50 minutes",
       "date": "2023-12-15",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "date": "2024-06-05",
+          "rating": 3,
+          "comment": "Good!"
+        }
+      ]
     },
     {
       "id": "c626",
@@ -197,7 +204,14 @@
       "mealPreparationTime": "1 hour",
       "date": "2023-02-21",
       "isFavorited": false,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Chris",
+          "date": "2024-06-05",
+          "rating": 5,
+          "comment": "Great!"
+        }
+      ]
     },
     {
       "id": "c90e",
@@ -294,7 +308,20 @@
       "mealPreparationTime": "30 minutes",
       "date": "2024-03-21",
       "isFavorited": true,
-      "userFeedback": []
+      "userFeedback": [
+        {
+          "name": "Christopher",
+          "date": "2024-06-05",
+          "rating": 5,
+          "comment": "Great!"
+        },
+        {
+          "name": "Chris",
+          "date": "2024-06-05",
+          "rating": 4,
+          "comment": "Good!"
+        }
+      ]
     },
     {
       "id": "aa5d",
@@ -430,6 +457,18 @@
           "name": "Tom",
           "rating": 5,
           "comment": "i love blueberries"
+        },
+        {
+          "name": "Christopher",
+          "date": "2024-06-05",
+          "rating": 3,
+          "comment": "Good!"
+        },
+        {
+          "name": "Christopher",
+          "date": "2024-06-05",
+          "rating": 2,
+          "comment": "Okay!"
         }
       ]
     },
@@ -554,6 +593,18 @@
           "name": "Rita",
           "rating": 5,
           "comment": "YUM"
+        },
+        {
+          "name": "Christopher",
+          "date": "2024-06-05",
+          "rating": 4,
+          "comment": "Great!"
+        },
+        {
+          "name": "Christopher",
+          "date": "2024-06-05",
+          "rating": 3,
+          "comment": "Good!"
         }
       ]
     },
