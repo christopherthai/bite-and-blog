@@ -38,6 +38,22 @@ To get a local copy up and running, follow these steps.
    npm install
    ```
 
+## Running the Application
+
+1. Ensure you are in the root directory of the project.
+
+2. Start the JSON server to watch `db.json` on port 4000:
+
+   ```bash
+   json-server --watch db.json --port 4000
+   ```
+
+3. Open another terminal and start the application:
+
+   ```bash
+   npm run start
+   ```
+
 ## Wireframe
 
 ![Wireframe](./planning/Wireframe.png)
