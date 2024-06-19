@@ -54,6 +54,12 @@ To get a local copy up and running, follow these steps.
    npm run start
    ```
 
+## Additional Notes
+
+- The front-end is developed using React to create a dynamic and responsive user interface.
+- JSON is utilized for efficient data interchange between the server and client-side.
+- Ensure your development environment is properly configured with the latest versions of Node.js and npm for optimal performance.
+
 ## Wireframe
 
 ![Wireframe](./planning/Wireframe.png)
