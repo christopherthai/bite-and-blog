@@ -12,6 +12,7 @@ Before you begin, ensure you have met the following requirements:
 
 - You have installed [Git](https://git-scm.com/).
 - You have a [GitHub](https://github.com/) account.
+- You have installed [json-server](https://github.com/typicode/json-server).
 - You have installed [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/get-npm).
 
 ## Getting Started
